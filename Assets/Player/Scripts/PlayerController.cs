@@ -14,6 +14,8 @@ public interface IPlayerController
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour, IPlayerController
 {
+    public static Transform Transform { get; private set; }
+
     private PlayerHealthManager healthManager;
     private PlayerMovementHandler movementHandler;
     private PlayerCombatHandler combatHandler;
@@ -21,6 +23,14 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void Awake()
     {
+        if (Transform != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
+        Transform = transform;
+
         PlayerState playerState = new();
         PlayerContext playerContext = new();
 
@@ -64,22 +74,4 @@ public class PlayerController : MonoBehaviour, IPlayerController
         movementHandler.HandleMovement();
         combatHandler.HandleCombat();
     }
-}
-
-public class PlayerState
-{
-    public bool AllowMove = true;
-    public bool IsDashing = false;
-    public bool IsGround = true;
-    public bool IsAttacking = false;
-    public bool FlipX = false;
-}
-
-public class PlayerContext
-{
-    public IPlayerRenderManager RenderManager;
-    public IPlayerCombatHandler CombatHandler;
-    public IPlayerController Controller;
-    public IPlayerHealthManager HealthManager;
-    public IPlayerMovementHandler MovementHandler;
 }
