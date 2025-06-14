@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class EnemyPatternData : MonoBehaviour
 {
-    [HideInInspector] public List<IEnemyAttackPattern> AttackPatterns;
+    [HideInInspector] public List<IEnemyAttackPattern> AttackPatterns = new();
 
     private void Awake() => Initialize();
     public abstract void Initialize();

@@ -43,5 +43,6 @@ public class EnemyCombatHandler : MonoBehaviour, IEnemyCombatHandler
     {
         yield return new WaitForSeconds(attackInterval);
         enemyState.Behavior = EnemyState.BehaviorType.Idle;
+        enemyContext.RenderManager.ResetAnimationState();
     }
 }

@@ -1,9 +1,14 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public interface IEnemyMovementHandler
 {
-
+    public Vector3 Position { get; }
+    public bool UseGravity { set; }
+    public void AddForce(Vector2 moveRate);
+    public void Translate(Vector2 position);
+    public void SetVelocity(Vector2 velocity);
 }
 
 public class EnemyMovementHandler : MonoBehaviour, IEnemyMovementHandler
@@ -17,6 +22,21 @@ public class EnemyMovementHandler : MonoBehaviour, IEnemyMovementHandler
     private EnemyState enemyState;
     private Rigidbody2D enemyRigidBody;
 
+    private float initialGravity;
+
+    public Vector3 Position => transform.position;
+
+    public bool UseGravity
+    {
+        set
+        {
+            if (value)
+                enemyRigidBody.gravityScale = initialGravity;
+            else 
+                enemyRigidBody.gravityScale = 0;
+        }
+    }
+
     public void Initialize(
         EnemyState enemyState,
         EnemyContext enemyContext,
@@ -26,6 +46,7 @@ public class EnemyMovementHandler : MonoBehaviour, IEnemyMovementHandler
         this.enemyState = enemyState;
         this.enemyContext = enemyContext;
         this.enemyRigidBody = enemyRigidBody;
+        initialGravity = this.enemyRigidBody.gravityScale;
     }
 
     public void HandleMovement()
@@ -54,6 +75,21 @@ public class EnemyMovementHandler : MonoBehaviour, IEnemyMovementHandler
 
         enemyRigidBody.linearVelocity = moveRate;
         enemyContext.RenderManager.SyncEnemyMoveState(moveRate);
+    }
+
+    public void AddForce(Vector2 moveRate)
+    {
+        enemyRigidBody.AddForce(moveRate);
+    }
+
+    public void SetVelocity(Vector2 velocity)
+    {
+        enemyRigidBody.linearVelocity = velocity;
+    }
+
+    public void Translate(Vector2 position)
+    {
+        enemyRigidBody.MovePosition(position);
     }
 
     [Serializable]
