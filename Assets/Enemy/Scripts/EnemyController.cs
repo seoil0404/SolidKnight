@@ -63,5 +63,6 @@ public class EnemyController : MonoBehaviour, IEnemyController
     {
         movementHandler.HandleMovement();
         renderManager.HandleRender();
+        combatHandler.HandleCombat();
     }
 }

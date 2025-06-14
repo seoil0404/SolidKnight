@@ -92,7 +92,7 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
 
     private IEnumerator Dash()
     {
-        playerRigidBody.linearVelocityX = 0f;
+        playerRigidBody.linearVelocity = Vector2.zero;
 
         if (playerState.FlipX) playerRigidBody.AddForceX(-dashPower);
         else playerRigidBody.AddForceX(dashPower);
