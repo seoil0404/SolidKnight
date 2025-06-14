@@ -952,6 +952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f7c4cdf4b7ce9418ea54c87483e461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  comboData: {fileID: 11400000, guid: a40839f1d4503a14ebbf59c0ce9b4c98, type: 2}
+  comboInterval: 0.2
 --- !u!114 &1225362399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,6 +969,9 @@ MonoBehaviour:
   moveSpeed: 7
   jumpPower: 250
   jumpTime: 0.4
+  dashTime: 0.15
+  dashPower: 1200
+  dashDelay: 0.35
 --- !u!114 &1225362400
 MonoBehaviour:
   m_ObjectHideFlags: 0

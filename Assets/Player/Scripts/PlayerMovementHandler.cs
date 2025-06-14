@@ -1,26 +1,35 @@
 using System.Collections;
 using System.ComponentModel;
+using Unity.XR.GoogleVr;
 using UnityEngine;
 
 public interface IPlayerMovementHandler
 {
-
+    public void SetVelocity(Vector2 vector2);
 }
 
 public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
 {
+    [Header("Move")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpPower;
+
+    [Header("Jump")]
     [SerializeField] private float jumpTime;
+
+    [Header("Dash")]
+    [SerializeField] private float dashTime;
+    [SerializeField] private float dashPower;
+    [SerializeField] private float dashDelay;
 
     private PlayerState playerState;
     private PlayerContext playerContext;
     private Rigidbody2D playerRigidBody;
 
-    private bool isGround = true;
-
     private Coroutine jumpGravityCoroutine = null;
     private float gravityScale;
+
+    private Coroutine dashCoroutine = null;
 
     public void Initialize(
         PlayerState playerState, 
@@ -37,8 +46,12 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
 
     public void HandleMovement()
     {
+        if (!playerState.AllowMove)
+            return;
+
         HandleXAxisMove();
         HandleJump();
+        HandleDash();
     }
 
     private void HandleXAxisMove()
@@ -55,33 +68,80 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
 
     private void HandleJump()
     {
-        if (Input.GetKeyUp(KeyData.Jump) && !isGround)
+        if (Input.GetKeyUp(KeyData.Jump) && !playerState.IsGround)
         {
             if(jumpGravityCoroutine != null) StopCoroutine(jumpGravityCoroutine);
             playerRigidBody.gravityScale = gravityScale;
         }
-        else if (Input.GetKeyDown(KeyData.Jump) && isGround)
+        else if (Input.GetKeyDown(KeyData.Jump) && playerState.IsGround)
         {
             playerRigidBody.AddForceY(jumpPower);
-            isGround = false;
+            playerState.IsGround = false;
             jumpGravityCoroutine = StartCoroutine(ScaleJumpGravity());
             playerContext.RenderManager.OnJumpStarted();
         }
     }
 
+    private void HandleDash()
+    {
+        if(Input.GetKeyDown(KeyData.Dash) && dashCoroutine == null)
+        {
+            dashCoroutine = StartCoroutine(Dash());
+        }
+    }
+
+    private IEnumerator Dash()
+    {
+        playerRigidBody.linearVelocityX = 0f;
+
+        if (playerState.FlipX) playerRigidBody.AddForceX(-dashPower);
+        else playerRigidBody.AddForceX(dashPower);
+
+        playerState.IsDashing = true;
+        playerState.AllowMove = false;
+
+        playerContext.RenderManager.OnDash();
+
+        yield return new WaitForSeconds(dashTime);
+
+        playerState.AllowMove = true;
+        playerState.IsDashing = false;
+
+        playerRigidBody.linearVelocityX = 0;
+
+        playerContext.RenderManager.OnDashEnded();
+
+        yield return new WaitForSeconds(dashDelay);
+
+        dashCoroutine = null;
+    }
+
     private IEnumerator ScaleJumpGravity()
     {
         playerRigidBody.gravityScale = 0;
+
         yield return new WaitForSeconds(jumpTime);
+        
         playerRigidBody.gravityScale = gravityScale;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == Layer.Ground && !isGround)
+        if (collision.gameObject.layer == Layer.Ground && !playerState.IsGround)
         {
             playerContext.RenderManager.OnJumpEnded();
-            isGround = true;
+            playerState.IsGround = true;
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == Layer.Ground && playerState.IsGround)
+            playerState.IsGround = false;
+    }
+
+    public void SetVelocity(Vector2 vector2)
+    {
+        playerRigidBody.linearVelocity = vector2;
     }
 }

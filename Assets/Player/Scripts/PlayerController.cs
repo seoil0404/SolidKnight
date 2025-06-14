@@ -62,12 +62,17 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private void Update()
     {
         movementHandler.HandleMovement();
+        combatHandler.HandleCombat();
     }
 }
 
 public class PlayerState
 {
-
+    public bool AllowMove = true;
+    public bool IsDashing = false;
+    public bool IsGround = true;
+    public bool IsAttacking = false;
+    public bool FlipX = false;
 }
 
 public class PlayerContext

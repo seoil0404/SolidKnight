@@ -1,3 +1,7 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public interface IPlayerCombatHandler
@@ -7,12 +11,14 @@ public interface IPlayerCombatHandler
 
 public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
 {
+    [SerializeField] private ComboData comboData;
+    [SerializeField] private float comboInterval;
+
     private PlayerState playerState;
     private PlayerContext playerContext;
 
-    private static readonly int maxCombo = 3;
-
     private int currentCombo = 0;
+    private Coroutine resetComboCoroutine = null;
 
     public void Initialize(
         PlayerState playerState,
@@ -25,18 +31,41 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
 
     public void HandleCombat()
     {
-        if(Input.GetKeyDown(KeyData.Attack))
+        if(Input.GetKeyDown(KeyData.Attack) && !playerState.IsAttacking && playerState.IsGround && !playerState.IsDashing)
         {
+            if (resetComboCoroutine != null) StopCoroutine(resetComboCoroutine);
 
+            playerContext.RenderManager.OnAttack(comboData.List[currentCombo]);
 
-            currentCombo = (currentCombo + 1) % maxCombo;
+            if (playerState.FlipX) playerContext.MovementHandler.SetVelocity(-comboData.List[currentCombo].MoveRate);
+            else playerContext.MovementHandler.SetVelocity(comboData.List[currentCombo].MoveRate);
+
+            playerState.IsAttacking = true;
+            playerState.AllowMove = false;
+
+            currentCombo = (currentCombo + 1) % comboData.List.Count;
         }
     }
 
-    public enum Combo
+    private void EndCombo()
     {
-        First,
-        Second,
-        Third
+        playerState.IsAttacking = false;
+        playerContext.MovementHandler.SetVelocity(Vector2.zero);
+        resetComboCoroutine = StartCoroutine(ResetCombo());
+    }
+
+    private IEnumerator ResetCombo()
+    {
+        yield return new WaitForSeconds(comboInterval);
+        playerContext.RenderManager.OnAttackEnded();
+        playerState.AllowMove = true;
+        currentCombo = 0;
+    }
+
+    [Serializable]
+    public class Combo
+    {
+        public string AnimationName;
+        public Vector2 MoveRate;
     }
 }
