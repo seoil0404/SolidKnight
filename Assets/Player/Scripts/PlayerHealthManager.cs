@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
 
 public interface IPlayerHealthManager
 {
-    public void ReduceHealth(uint health);
+    public bool ReduceHealth(uint health);
 }
 
 public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
@@ -21,12 +22,30 @@ public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
         this.playerContext = playerContext;
     }
 
-    public void ReduceHealth(uint health)
+    public bool ReduceHealth(uint health)
     {
+        StartCoroutine(StopTime());
+
+        if (playerContext.CombatHandler.IsParring())
+        {
+            playerContext.CombatHandler.OnParringSucces();
+            return false;
+        }
+
         this.health -= (int)health;
 
         if (health < 0) Death();
         else playerContext.RenderManager.OnGetHit();
+
+        return true;
+    }
+
+    private IEnumerator StopTime()
+    {
+        yield return new WaitForSeconds(0.05f);
+        playerContext.RenderManager.SetTimeScale(0);
+        yield return new WaitForSecondsRealtime(0.3f);
+        playerContext.RenderManager.SetTimeScale(1);
     }
 
     private void Death()

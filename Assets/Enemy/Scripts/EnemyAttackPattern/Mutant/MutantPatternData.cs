@@ -35,7 +35,14 @@ public class MutantPatternData : EnemyPatternData
                     )
                 );
 
-            yield return new WaitForSeconds(0.35f);
+            yield return new WaitForSeconds(0.3f);
+
+            Hitbox currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(4, 3), 1);
+            currentHitBox.transform.localPosition = new Vector3(0, -2, 0);
+
+            yield return new WaitForSeconds(0.05f);
+
+            if (currentHitBox != null) Destroy(currentHitBox.gameObject);
 
             enemyContext.MovementHandler.SetVelocity(Vector2.zero);
 
@@ -60,7 +67,14 @@ public class MutantPatternData : EnemyPatternData
 
             enemyContext.MovementHandler.SetVelocity(new Vector2(moveRate * 35, 0));
 
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
+
+            Hitbox currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(7, 5), 1);
+            currentHitBox.transform.localPosition = new Vector3(1 * moveRate, -3, 0);
+
+            yield return new WaitForSeconds(0.05f);
+
+            if(currentHitBox != null) Destroy(currentHitBox.gameObject);
 
             enemyContext.MovementHandler.SetVelocity(new Vector2(0, 0));
 
@@ -68,7 +82,12 @@ public class MutantPatternData : EnemyPatternData
 
             enemyContext.MovementHandler.SetVelocity(new Vector2(moveRate * 35, 0));
 
+            currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(7, 5), 1);
+            currentHitBox.transform.localPosition = new Vector3(1 * moveRate, -3, 0);
+
             yield return new WaitForSeconds(0.1f);
+
+            if (currentHitBox != null) Destroy(currentHitBox.gameObject);
 
             enemyContext.MovementHandler.SetVelocity(new Vector2(0, 0));
 
@@ -98,7 +117,14 @@ public class MutantPatternData : EnemyPatternData
             enemyContext.MovementHandler.UseGravity = true;
             enemyContext.MovementHandler.SetVelocity(Vector2.down * 100);
 
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.075f);
+
+            Hitbox currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(4, 3), 1);
+            currentHitBox.transform.localPosition = new Vector3(0, -2, 0);
+
+            yield return new WaitForSeconds(0.025f);
+
+            if (currentHitBox != null) Destroy(currentHitBox.gameObject);
 
             enemyContext.CombatHandler.OnEndAttack();
         }

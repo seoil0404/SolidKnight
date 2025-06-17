@@ -5,6 +5,7 @@ using UnityEngine;
 public interface IEnemyMovementHandler
 {
     public Vector3 Position { get; }
+    public Transform Transform { get; }
     public bool UseGravity { set; }
     public void AddForce(Vector2 moveRate);
     public void Translate(Vector2 position);
@@ -25,7 +26,7 @@ public class EnemyMovementHandler : MonoBehaviour, IEnemyMovementHandler
     private float initialGravity;
 
     public Vector3 Position => transform.position;
-
+    public Transform Transform => transform;
     public bool UseGravity
     {
         set

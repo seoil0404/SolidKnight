@@ -8,6 +8,7 @@ public static class KeyData
     public static KeyCode Attack { get; private set; }
     public static KeyCode Skill { get; private set; }
     public static KeyCode Dash { get; private set; }
+    public static KeyCode Parring { get; private set; }
 
     [RuntimeInitializeOnLoadMethod]
     private static void Initialize()
@@ -18,5 +19,6 @@ public static class KeyData
         Attack = KeyCode.X;
         Skill = KeyCode.A;
         Dash = KeyCode.C;
+        Parring = KeyCode.S;
     }
 }

@@ -29,10 +29,15 @@ public class Hitbox : MonoBehaviour
         {
             PlayerHealthManager healthManager;
             if (collision.gameObject.TryGetComponent(out healthManager))
-                healthManager.ReduceHealth(damage);
+            {
+                if(healthManager.ReduceHealth(damage))
+                    Instantiate(effectData.PlayerHit).transform.position = transform.position;
+                else
+                    Instantiate(effectData.Parring).transform.position = transform.position;
+            }
+            else return;
 
-            Destroy(gameObject);
-            return;
+            
         }
         else if (target == Target.Enemy)
         {
@@ -40,10 +45,10 @@ public class Hitbox : MonoBehaviour
             if (collision.gameObject.TryGetComponent(out healthManager))
                 healthManager.ReduceHealth(damage);
             else return;
+
+            Instantiate(effectData.Hit).transform.position = transform.position;
         }
         else return;
-
-        Instantiate(effectData.Hit).transform.position = transform.position;
         Destroy(gameObject);
     }
 

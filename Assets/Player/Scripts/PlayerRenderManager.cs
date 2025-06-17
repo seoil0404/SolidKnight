@@ -7,10 +7,13 @@ public interface IPlayerRenderManager
     public void OnJumpEnded();
     public void OnDash();
     public void OnDashEnded();
+    public void OnParring();
     public void Play(string name);
     public void OnAttackEnded();
     public void OnGetHit();
     public void OnDeath();
+    public void SetTimeScale(float timeScale);
+    public bool IsPlaying(string name);
 }
 
 public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
@@ -43,6 +46,9 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
 
     private void ResetAnimationState()
     {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Parring"))
+            return;
+
         if (animator.GetBool("IsRun"))
             animator.Play("Run", 0);
         else animator.Play("Idle", 0);
@@ -70,6 +76,9 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
             spriteRenderer.flipX = true;
 
         playerState.FlipX = spriteRenderer.flipX;
+
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Walk") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+            animator.Play("Run");
     }
 
     public void OnDash()
@@ -95,4 +104,14 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
     {
         
     }
+
+    public void OnParring()
+    {
+        animator.Play("Parring");
+    }
+
+    public bool IsPlaying(string name) =>
+        animator.GetCurrentAnimatorStateInfo(0).IsName(name);
+
+    public void SetTimeScale(float timeScale) => Time.timeScale = timeScale;
 }
