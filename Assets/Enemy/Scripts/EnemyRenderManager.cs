@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -6,6 +7,7 @@ public interface IEnemyRenderManager
     public void SyncEnemyMoveState(Vector2 moveRate);
     public void PlayAnimation(string animationName);
     public void ResetAnimationState();
+    public void FadeColor(Color startColor, Color endColor, float time);
 }
 
 public class EnemyRenderManager : MonoBehaviour, IEnemyRenderManager
@@ -63,5 +65,12 @@ public class EnemyRenderManager : MonoBehaviour, IEnemyRenderManager
         if (animator.GetBool("IsWalk"))
             animator.Play("Walk", 0);
         else animator.Play("Idle", 0);
+    }
+
+    public void FadeColor(Color startColor, Color endColor, float time)
+    {
+        spriteRenderer.DOKill();
+        spriteRenderer.color = startColor;
+        spriteRenderer.DOColor(endColor, time);
     }
 }

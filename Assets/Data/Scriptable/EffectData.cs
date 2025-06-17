@@ -7,9 +7,11 @@ public class EffectData : ScriptableObject
     [SerializeField] private EffectController hit;
     [SerializeField] private EffectController playerHit;
     [SerializeField] private EffectController parring;
+    [SerializeField] private EffectController dust;
 
     public EffectController Dash => dash;
     public EffectController Hit => hit;
     public EffectController PlayerHit => playerHit;
     public EffectController Parring => parring;
+    public EffectController Dust => dust;
 }

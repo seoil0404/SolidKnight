@@ -1,3 +1,5 @@
+using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public interface IPlayerRenderManager
@@ -13,6 +15,8 @@ public interface IPlayerRenderManager
     public void OnGetHit();
     public void OnDeath();
     public void SetTimeScale(float timeScale);
+    public void FadeColor(Color startColor, Color endColor, float time);
+    public void GenerateDust();
     public bool IsPlaying(string name);
 }
 
@@ -36,6 +40,17 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
         this.playerContext = playerContext;
         this.animator = animator;
         this.spriteRenderer = spriteRenderer;
+
+        StartCoroutine(HandleDust());
+    }
+
+    private IEnumerator HandleDust()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.05f);
+            if (playerContext.MovementHandler.IsWalking()) GenerateDust();
+        }
     }
 
     public void Play(string name) => animator.Play(name);
@@ -114,4 +129,16 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
         animator.GetCurrentAnimatorStateInfo(0).IsName(name);
 
     public void SetTimeScale(float timeScale) => Time.timeScale = timeScale;
+
+    public void FadeColor(Color startColor, Color endColor, float time)
+    {
+        spriteRenderer.DOKill();
+        spriteRenderer.color = startColor;
+        spriteRenderer.DOColor(endColor, time);
+    }
+
+    public void GenerateDust()
+    {
+        Instantiate(effectData.Dust).transform.position = transform.position + new Vector3(0, -1.5f, 0);
+    }
 }

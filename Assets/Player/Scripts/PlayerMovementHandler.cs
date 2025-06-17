@@ -7,6 +7,7 @@ public interface IPlayerMovementHandler
 {
     public void SetVelocity(Vector2 vector2);
     public Transform Transform { get; }
+    public bool IsWalking();
 }
 
 public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
@@ -147,4 +148,7 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
     {
         playerRigidBody.linearVelocity = vector2;
     }
+
+    public bool IsWalking() =>
+        playerState.IsGround && playerRigidBody.linearVelocityX != 0 && dashCoroutine == null;
 }

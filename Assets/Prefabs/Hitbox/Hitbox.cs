@@ -31,7 +31,10 @@ public class Hitbox : MonoBehaviour
             if (collision.gameObject.TryGetComponent(out healthManager))
             {
                 if(healthManager.ReduceHealth(damage))
+                {
                     Instantiate(effectData.PlayerHit).transform.position = transform.position;
+                    healthManager.gameObject.GetComponent<PlayerRenderManager>().FadeColor(Color.red, Color.white, 0.5f);
+                }
                 else
                     Instantiate(effectData.Parring).transform.position = transform.position;
             }
@@ -41,9 +44,11 @@ public class Hitbox : MonoBehaviour
         }
         else if (target == Target.Enemy)
         {
-            EnemyHealthManager healthManager;
-            if (collision.gameObject.TryGetComponent(out healthManager))
+            if (collision.gameObject.TryGetComponent(out EnemyHealthManager healthManager))
+            {
                 healthManager.ReduceHealth(damage);
+                healthManager.gameObject.GetComponent<EnemyRenderManager>().FadeColor(Color.red, Color.white, 0.5f);
+            }
             else return;
 
             Instantiate(effectData.Hit).transform.position = transform.position;

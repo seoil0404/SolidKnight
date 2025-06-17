@@ -19,6 +19,6 @@ public static class KeyData
         Attack = KeyCode.X;
         Skill = KeyCode.A;
         Dash = KeyCode.C;
-        Parring = KeyCode.S;
+        Parring = KeyCode.LeftShift;
     }
 }
