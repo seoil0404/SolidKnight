@@ -1,0 +1,1130 @@
+fileFormatVersion: 2
+guid: c9f56efffc539454a82879bea25935cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2696928900057172854
+    second: wall_rain0002_0
+  - first:
+      213: -5115570752988391588
+    second: wall_rain0002_1
+  - first:
+      213: -9079797577248943825
+    second: wall_rain0002_2
+  - first:
+      213: -7015705581245310099
+    second: wall_rain0002_3
+  - first:
+      213: 6328290418112139318
+    second: wall_rain0002_4
+  - first:
+      213: 2031321573802602676
+    second: wall_rain0002_5
+  - first:
+      213: 3467392443382990803
+    second: wall_rain0002_6
+  - first:
+      213: 4886747982403754667
+    second: wall_rain0002_7
+  - first:
+      213: 8410528910652368306
+    second: wall_rain0002_8
+  - first:
+      213: -2645964206434618931
+    second: wall_rain0002_9
+  - first:
+      213: -6880064110525454645
+    second: wall_rain0002_10
+  - first:
+      213: 7742120536836271455
+    second: wall_rain0002_11
+  - first:
+      213: -2429031466653445709
+    second: wall_rain0002_12
+  - first:
+      213: 8991107130859642827
+    second: wall_rain0002_13
+  - first:
+      213: 8508682837304893152
+    second: wall_rain0002_14
+  - first:
+      213: 2663380171443535293
+    second: wall_rain0002_15
+  - first:
+      213: 2953457631834001174
+    second: wall_rain0002_16
+  - first:
+      213: 7631605149576143635
+    second: wall_rain0002_17
+  - first:
+      213: 6611059029092655234
+    second: wall_rain0002_18
+  - first:
+      213: 8246365828112429248
+    second: wall_rain0002_19
+  - first:
+      213: -8477650993330373598
+    second: wall_rain0002_20
+  - first:
+      213: -1771671063038020196
+    second: wall_rain0002_21
+  - first:
+      213: -4666005621710193237
+    second: wall_rain0002_22
+  - first:
+      213: 1325708298376222282
+    second: wall_rain0002_23
+  - first:
+      213: 8471371864044678210
+    second: wall_rain0002_24
+  - first:
+      213: -2757460782127512781
+    second: wall_rain0002_25
+  - first:
+      213: -7427515496686448034
+    second: wall_rain0002_26
+  - first:
+      213: -8871821077077140068
+    second: wall_rain0002_27
+  - first:
+      213: 8933452986837593428
+    second: wall_rain0002_28
+  - first:
+      213: 4627982792064149312
+    second: wall_rain0002_29
+  - first:
+      213: -5730239474818158425
+    second: wall_rain0002_30
+  - first:
+      213: -6286495867578575554
+    second: wall_rain0002_31
+  - first:
+      213: 1618038331853500541
+    second: wall_rain0002_32
+  - first:
+      213: -4131514480782561800
+    second: wall_rain0002_33
+  - first:
+      213: -2757998012251177869
+    second: wall_rain0002_34
+  - first:
+      213: 4053131094922805474
+    second: wall_rain0002_35
+  - first:
+      213: -5368837671674704693
+    second: wall_rain0002_36
+  - first:
+      213: 8906816441984592977
+    second: wall_rain0002_37
+  - first:
+      213: 6099063784029945931
+    second: wall_rain0002_38
+  - first:
+      213: -5790337321735515812
+    second: wall_rain0002_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall_rain0002_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 208
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a847b9f4475929ad0800000000000000
+      internalID: -2696928900057172854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 179
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57dfbce087d109b0800000000000000
+      internalID: -5115570752988391588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 201
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21df97d5341ef180800000000000000
+      internalID: -9079797577248943825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 177
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bd525d1f433ae90800000000000000
+      internalID: -7015705581245310099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 192
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63015174b9a92d750800000000000000
+      internalID: 6328290418112139318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 177
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0771f7534b03c10800000000000000
+      internalID: 2031321573802602676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 157
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d787b46e07ae1030800000000000000
+      internalID: 3467392443382990803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 164
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa580e166731d340800000000000000
+      internalID: 4886747982403754667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 173
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5669cbb7338b470800000000000000
+      internalID: 8410528910652368306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_9
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 171
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1f01bb295a74bd0800000000000000
+      internalID: -2645964206434618931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 134
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc66734c42a1580a0800000000000000
+      internalID: -6880064110525454645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 144
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5de166db99817b60800000000000000
+      internalID: 7742120536836271455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 145
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b110e920c85a4ed0800000000000000
+      internalID: -2429031466653445709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 149
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfde507c44d6cc70800000000000000
+      internalID: 8991107130859642827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_14
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 132
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee5508a5f9e41670800000000000000
+      internalID: 8508682837304893152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 141
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdf5bc972a36f420800000000000000
+      internalID: 2663380171443535293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_16
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 142
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fc1ac611accf820800000000000000
+      internalID: 2953457631834001174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_17
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 113
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31327861378e8e960800000000000000
+      internalID: 7631605149576143635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 127
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280e43af8233fbb50800000000000000
+      internalID: 6611059029092655234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_19
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 76
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0bf80970af07270800000000000000
+      internalID: 8246365828112429248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_20
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 122
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c3ecc8655595a80800000000000000
+      internalID: -8477650993330373598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_21
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 121
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95b7cc0e82c967e0800000000000000
+      internalID: -1771671063038020196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_22
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 117
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badfcfdcb940f3fb0800000000000000
+      internalID: -4666005621710193237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_23
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 96
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4690886cacd56210800000000000000
+      internalID: 1325708298376222282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_24
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 81
+        width: 13
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c2f9cb3db509570800000000000000
+      internalID: 8471371864044678210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_25
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 112
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333083f37088bb9d0800000000000000
+      internalID: -2757460782127512781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 91
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e529b48220a2ce890800000000000000
+      internalID: -7427515496686448034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 93
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d5efd3cb5f0e480800000000000000
+      internalID: -8871821077077140068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_28
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 93
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d6b1af8200afb70800000000000000
+      internalID: 8933452986837593428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_29
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 90
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047aa9b44d5e93040800000000000000
+      internalID: 4627982792064149312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 93
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0fa89ce891a70b0800000000000000
+      internalID: -5730239474818158425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_31
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 76
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e359403d051e1c8a0800000000000000
+      internalID: -6286495867578575554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 37
+        width: 11
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70f7134a4d647610800000000000000
+      internalID: 1618038331853500541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_33
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 61
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fda29c2879e9a6c0800000000000000
+      internalID: -4131514480782561800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 62
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cf88c9b6f99b9d0800000000000000
+      internalID: -2757998012251177869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_35
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1
+        width: 28
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0c6f4a14d9f3830800000000000000
+      internalID: 4053131094922805474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_36
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 66
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc081b359e0e75b0800000000000000
+      internalID: -5368837671674704693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_37
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 52
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ca9181d5e5b9b70800000000000000
+      internalID: 8906816441984592977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_38
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 44
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b400e85823a34a450800000000000000
+      internalID: 6099063784029945931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_rain0002_39
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51944862e694afa0800000000000000
+      internalID: -5790337321735515812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

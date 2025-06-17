@@ -3,7 +3,7 @@ using UnityEngine;
 
 public interface IEnemyController
 {
-    public Coroutine StartCorutine(IEnumerator routine);
+    public Coroutine StartCoroutine(IEnumerator routine);
 }
 
 [RequireComponent(typeof(EnemyMovementHandler))]
@@ -66,7 +66,4 @@ public class EnemyController : MonoBehaviour, IEnemyController
         renderManager.HandleRender();
         combatHandler.HandleCombat();
     }
-
-    public Coroutine StartCorutine(IEnumerator routine) =>
-        StartCoroutine(routine);
 }

@@ -4,15 +4,19 @@ using UnityEngine;
 public interface IEnemyCombatHandler
 {
     public void OnEndAttack();
+    public Hitbox HitBoxPrefab { get; }
 }
 
 public class EnemyCombatHandler : MonoBehaviour, IEnemyCombatHandler
 {
     [SerializeField] private EnemyPatternData patternData;
+    [SerializeField] private Hitbox hitboxPrefab;
     [SerializeField] private float attackInterval;
 
     private EnemyContext enemyContext;
     private EnemyState enemyState;
+
+    public Hitbox HitBoxPrefab => hitboxPrefab;
 
     public void Initialize(
         EnemyState enemyState,

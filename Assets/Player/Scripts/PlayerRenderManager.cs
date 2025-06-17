@@ -7,12 +7,16 @@ public interface IPlayerRenderManager
     public void OnJumpEnded();
     public void OnDash();
     public void OnDashEnded();
-    public void OnAttack(PlayerCombatHandler.Combo combo);
+    public void Play(string name);
     public void OnAttackEnded();
+    public void OnGetHit();
+    public void OnDeath();
 }
 
 public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
 {
+    [SerializeField] private EffectData effectData;
+
     private PlayerState playerState;
     private PlayerContext playerContext;
     private Animator animator;
@@ -31,10 +35,7 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
         this.spriteRenderer = spriteRenderer;
     }
 
-    public void OnAttack(PlayerCombatHandler.Combo combo)
-    {
-        animator.Play(combo.AnimationName);
-    }
+    public void Play(string name) => animator.Play(name);
 
     public void OnAttackEnded() => ResetAnimationState();
 
@@ -71,8 +72,27 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
         playerState.FlipX = spriteRenderer.flipX;
     }
 
-    public void OnDash() =>
+    public void OnDash()
+    {
         animator.Play("Dash", 0);
 
+        EffectController effect = Instantiate(effectData.Dash, transform);
+        effect.transform.localPosition = new(0, -1, 0);
+
+        if (playerState.FlipX) effect.transform.localScale =
+                new Vector3(effect.transform.localScale.x, effect.transform.localScale.y, effect.transform.localScale.z * -1);
+    }
+        
+
     public void OnDashEnded() => ResetAnimationState();
+
+    public void OnGetHit()
+    {
+        
+    }
+
+    public void OnDeath()
+    {
+        
+    }
 }

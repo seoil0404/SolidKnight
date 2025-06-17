@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
 
 public interface IPlayerController
 {
-
+    public Coroutine StartCoroutine(IEnumerator routine);
 }
 
 [RequireComponent(typeof(PlayerHealthManager))]

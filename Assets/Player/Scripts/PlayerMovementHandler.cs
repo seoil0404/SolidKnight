@@ -6,6 +6,7 @@ using UnityEngine;
 public interface IPlayerMovementHandler
 {
     public void SetVelocity(Vector2 vector2);
+    public Transform Transform { get; }
 }
 
 public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
@@ -30,6 +31,8 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
     private float gravityScale;
 
     private Coroutine dashCoroutine = null;
+
+    public Transform Transform => transform;
 
     public void Initialize(
         PlayerState playerState, 

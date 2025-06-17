@@ -1,0 +1,2780 @@
+fileFormatVersion: 2
+guid: 410c2b93354bfff4da1afe2ab5a2f871
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3960117316721457796
+    second: atlas0 #2050916_0
+  - first:
+      213: -718334581806574842
+    second: atlas0 #2050916_1
+  - first:
+      213: 6732305502804698570
+    second: atlas0 #2050916_2
+  - first:
+      213: -8176463677095530764
+    second: atlas0 #2050916_3
+  - first:
+      213: -5016822273871859529
+    second: atlas0 #2050916_4
+  - first:
+      213: -8145602684733385878
+    second: atlas0 #2050916_5
+  - first:
+      213: -6437984658149807513
+    second: atlas0 #2050916_6
+  - first:
+      213: -5806533302395763093
+    second: atlas0 #2050916_7
+  - first:
+      213: -1086550381337122004
+    second: atlas0 #2050916_8
+  - first:
+      213: 7087170790060006864
+    second: atlas0 #2050916_9
+  - first:
+      213: 6424911381889574058
+    second: atlas0 #2050916_10
+  - first:
+      213: -501287814023378444
+    second: atlas0 #2050916_11
+  - first:
+      213: -4622480165285474529
+    second: atlas0 #2050916_12
+  - first:
+      213: 5477990096045627663
+    second: atlas0 #2050916_13
+  - first:
+      213: 2295772466272594154
+    second: atlas0 #2050916_14
+  - first:
+      213: -4020358500510911384
+    second: atlas0 #2050916_15
+  - first:
+      213: -1097977468845207555
+    second: atlas0 #2050916_16
+  - first:
+      213: 3732104766025517948
+    second: atlas0 #2050916_17
+  - first:
+      213: 6168760307571094901
+    second: atlas0 #2050916_18
+  - first:
+      213: -5322438662851437042
+    second: atlas0 #2050916_19
+  - first:
+      213: -224390782865183379
+    second: atlas0 #2050916_20
+  - first:
+      213: 5850880963634176098
+    second: atlas0 #2050916_21
+  - first:
+      213: -4554421688090645538
+    second: atlas0 #2050916_22
+  - first:
+      213: 2864238134834373626
+    second: atlas0 #2050916_23
+  - first:
+      213: -4725082699360166973
+    second: atlas0 #2050916_24
+  - first:
+      213: -8719526967065439068
+    second: atlas0 #2050916_25
+  - first:
+      213: -3735704551104594367
+    second: atlas0 #2050916_26
+  - first:
+      213: -374693456076657153
+    second: atlas0 #2050916_27
+  - first:
+      213: -5652561130929844866
+    second: atlas0 #2050916_28
+  - first:
+      213: 6207520258101868452
+    second: atlas0 #2050916_29
+  - first:
+      213: 2267705963400829005
+    second: atlas0 #2050916_30
+  - first:
+      213: -5853515435229228136
+    second: atlas0 #2050916_31
+  - first:
+      213: 2247589060110608046
+    second: atlas0 #2050916_32
+  - first:
+      213: 1983547031348349445
+    second: atlas0 #2050916_33
+  - first:
+      213: -4169564400628550836
+    second: atlas0 #2050916_34
+  - first:
+      213: 3448357349136099767
+    second: atlas0 #2050916_35
+  - first:
+      213: 4353658487746032981
+    second: atlas0 #2050916_36
+  - first:
+      213: -7899288747885785965
+    second: atlas0 #2050916_37
+  - first:
+      213: -2564979913643089399
+    second: atlas0 #2050916_38
+  - first:
+      213: -189509274695365493
+    second: atlas0 #2050916_39
+  - first:
+      213: -8146341114086523839
+    second: atlas0 #2050916_40
+  - first:
+      213: -2721227888737826383
+    second: atlas0 #2050916_41
+  - first:
+      213: -4967432241864743880
+    second: atlas0 #2050916_42
+  - first:
+      213: 2641459451277893230
+    second: atlas0 #2050916_43
+  - first:
+      213: -863089349396310258
+    second: atlas0 #2050916_44
+  - first:
+      213: -10143797033817228
+    second: atlas0 #2050916_45
+  - first:
+      213: 73996222925152198
+    second: atlas0 #2050916_46
+  - first:
+      213: -4995692099431363990
+    second: atlas0 #2050916_47
+  - first:
+      213: 350660938694488038
+    second: atlas0 #2050916_48
+  - first:
+      213: 1397146881247791430
+    second: atlas0 #2050916_49
+  - first:
+      213: 4014799772076400937
+    second: atlas0 #2050916_50
+  - first:
+      213: -2727562531789217376
+    second: atlas0 #2050916_51
+  - first:
+      213: -8569399157645769692
+    second: atlas0 #2050916_52
+  - first:
+      213: 4232355950287821085
+    second: atlas0 #2050916_53
+  - first:
+      213: -7854772438479433134
+    second: atlas0 #2050916_54
+  - first:
+      213: 5394812892686264401
+    second: atlas0 #2050916_55
+  - first:
+      213: -3658847578197683297
+    second: atlas0 #2050916_56
+  - first:
+      213: -6081354247953044512
+    second: atlas0 #2050916_57
+  - first:
+      213: 7557295812793299081
+    second: atlas0 #2050916_58
+  - first:
+      213: -4964147267090339151
+    second: atlas0 #2050916_59
+  - first:
+      213: 7069826105318275907
+    second: atlas0 #2050916_60
+  - first:
+      213: -8013871208283986163
+    second: atlas0 #2050916_61
+  - first:
+      213: -1450398837726120369
+    second: atlas0 #2050916_62
+  - first:
+      213: 6420289642769175691
+    second: atlas0 #2050916_63
+  - first:
+      213: -4621454007878495087
+    second: atlas0 #2050916_64
+  - first:
+      213: 8873622193101866716
+    second: atlas0 #2050916_65
+  - first:
+      213: -1054108609515117526
+    second: atlas0 #2050916_66
+  - first:
+      213: -1853942238245752876
+    second: atlas0 #2050916_67
+  - first:
+      213: 8948128720146688787
+    second: atlas0 #2050916_68
+  - first:
+      213: -2879518586126541671
+    second: atlas0 #2050916_69
+  - first:
+      213: 193295092050453241
+    second: atlas0 #2050916_70
+  - first:
+      213: -3616650708942635030
+    second: atlas0 #2050916_71
+  - first:
+      213: -1431306684832438305
+    second: atlas0 #2050916_72
+  - first:
+      213: 7993797538899440749
+    second: atlas0 #2050916_73
+  - first:
+      213: -8932955205801904369
+    second: atlas0 #2050916_74
+  - first:
+      213: 1175322004647411150
+    second: atlas0 #2050916_75
+  - first:
+      213: 5366301746138383156
+    second: atlas0 #2050916_76
+  - first:
+      213: 2172562261585179129
+    second: atlas0 #2050916_77
+  - first:
+      213: -8406373382342307198
+    second: atlas0 #2050916_78
+  - first:
+      213: 3613874533524787302
+    second: atlas0 #2050916_79
+  - first:
+      213: 7966037512098844275
+    second: atlas0 #2050916_80
+  - first:
+      213: 961025506839827786
+    second: atlas0 #2050916_81
+  - first:
+      213: -7733277775285046177
+    second: atlas0 #2050916_82
+  - first:
+      213: 4144181438571433998
+    second: atlas0 #2050916_83
+  - first:
+      213: 7197491325757321821
+    second: atlas0 #2050916_84
+  - first:
+      213: 1578906354868687783
+    second: atlas0 #2050916_85
+  - first:
+      213: -6897132242081977735
+    second: atlas0 #2050916_86
+  - first:
+      213: 7714566203804127548
+    second: atlas0 #2050916_87
+  - first:
+      213: -8807796146841334996
+    second: atlas0 #2050916_88
+  - first:
+      213: 7792610375815017234
+    second: atlas0 #2050916_89
+  - first:
+      213: 3787290722986496461
+    second: atlas0 #2050916_90
+  - first:
+      213: 1707619493439527123
+    second: atlas0 #2050916_91
+  - first:
+      213: 4400981523395334155
+    second: atlas0 #2050916_92
+  - first:
+      213: -4215860047616819868
+    second: atlas0 #2050916_93
+  - first:
+      213: 7572019087128638480
+    second: atlas0 #2050916_94
+  - first:
+      213: 841155327579090910
+    second: atlas0 #2050916_95
+  - first:
+      213: -1014586893747039328
+    second: atlas0 #2050916_96
+  - first:
+      213: -3484839119668519373
+    second: atlas0 #2050916_97
+  - first:
+      213: 1793195800146329848
+    second: atlas0 #2050916_98
+  - first:
+      213: -2343233867558086645
+    second: atlas0 #2050916_99
+  - first:
+      213: 1810627468567770697
+    second: atlas0 #2050916_100
+  - first:
+      213: 7124051109844932382
+    second: atlas0 #2050916_101
+  - first:
+      213: 975501226696439976
+    second: atlas0 #2050916_102
+  - first:
+      213: -6913351873310210145
+    second: atlas0 #2050916_103
+  - first:
+      213: -2232369346083682687
+    second: atlas0 #2050916_104
+  - first:
+      213: -7606672836677033394
+    second: atlas0 #2050916_105
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atlas0 #2050916_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3706
+        width: 464
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75c1f33846da09c0800000000000000
+      internalID: -3960117316721457796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 3706
+        width: 467
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6035a85f086f706f0800000000000000
+      internalID: -718334581806574842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_2
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 3663
+        width: 365
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5e41e7f24fd6d50800000000000000
+      internalID: 6732305502804698570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_3
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 3661
+        width: 462
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe26df3b9d578e80800000000000000
+      internalID: -8176463677095530764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_4
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 3657
+        width: 338
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0b990e8baa06ab0800000000000000
+      internalID: -5016822273871859529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_5
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 3632
+        width: 349
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a639ff6f38105fe80800000000000000
+      internalID: -8145602684733385878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_6
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 3632
+        width: 375
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ae095301fa7a6a0800000000000000
+      internalID: -6437984658149807513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_7
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 3792
+        width: 520
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66893ec9bc0b6fa0800000000000000
+      internalID: -5806533302395763093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_8
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 3736
+        width: 458
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2be5d95f2ccbe0f0800000000000000
+      internalID: -1086550381337122004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_9
+      rect:
+        serializedVersion: 2
+        x: 3331
+        y: 3887
+        width: 456
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd1d0cb840ba5260800000000000000
+      internalID: 7087170790060006864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_10
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 3675
+        width: 125
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa464e67cded92950800000000000000
+      internalID: 6424911381889574058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3264
+        width: 506
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f987ea93611b09f0800000000000000
+      internalID: -501287814023378444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_12
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 3501
+        width: 161
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fced6d7c6a9dfb0800000000000000
+      internalID: -4622480165285474529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 3006
+        width: 510
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0958edf7fab50c40800000000000000
+      internalID: 5477990096045627663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_14
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 3501
+        width: 473
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8ec4105e83cdf10800000000000000
+      internalID: 2295772466272594154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_15
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 3192
+        width: 484
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864335b9e31d438c0800000000000000
+      internalID: -4020358500510911384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_16
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 3192
+        width: 350
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff49163f4333c0f0800000000000000
+      internalID: -1097977468845207555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_17
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 3158
+        width: 509
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b4e7bd2891bc330800000000000000
+      internalID: 3732104766025517948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_18
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 3338
+        width: 355
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575fd45f0d6db9550800000000000000
+      internalID: 6168760307571094901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_19
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 3390
+        width: 456
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e5fe15c36e226b0800000000000000
+      internalID: -5322438662851437042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_20
+      rect:
+        serializedVersion: 2
+        x: 3643
+        y: 3215
+        width: 352
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6de27895cdc2ecf0800000000000000
+      internalID: -224390782865183379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2892
+        width: 545
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260a284bc31823150800000000000000
+      internalID: 5850880963634176098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_22
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 2724
+        width: 520
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edba504ea917bc0c0800000000000000
+      internalID: -4554421688090645538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_23
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 2998
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af32ee28861dfb720800000000000000
+      internalID: 2864238134834373626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_24
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 2998
+        width: 309
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb1b4ac1522d6eb0800000000000000
+      internalID: -4725082699360166973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_25
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 2967
+        width: 151
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a410a6eb640ef680800000000000000
+      internalID: -8719526967065439068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_26
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2866
+        width: 162
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14eb99dd08c182cc0800000000000000
+      internalID: -3735704551104594367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_27
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 3013
+        width: 122
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd23e27942dccaf0800000000000000
+      internalID: -374693456076657153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_28
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 2866
+        width: 355
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d0fb799911e81b0800000000000000
+      internalID: -5652561130929844866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_29
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 2873
+        width: 356
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7f33039ca852650800000000000000
+      internalID: 6207520258101868452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_30
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2998
+        width: 462
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d489a831f82887f10800000000000000
+      internalID: 2267705963400829005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_31
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 2755
+        width: 353
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89355e399b224cea0800000000000000
+      internalID: -5853515435229228136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2577
+        width: 565
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea662f8875a013f10800000000000000
+      internalID: 2247589060110608046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_33
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 2609
+        width: 546
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a8cc60489f68b10800000000000000
+      internalID: 1983547031348349445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_34
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2817
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43bb68d44bb226c0800000000000000
+      internalID: -4169564400628550836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_35
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 2604
+        width: 530
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b96dd52db60bdf20800000000000000
+      internalID: 3448357349136099767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_36
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 2372
+        width: 543
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5557773f35d4b6c30800000000000000
+      internalID: 4353658487746032981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_37
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 2384
+        width: 381
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c070c6cb6106290800000000000000
+      internalID: -7899288747885785965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_38
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 2656
+        width: 537
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902aa4fbb5c576cd0800000000000000
+      internalID: -2564979913643089399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2201
+        width: 568
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c0428915abe5df0800000000000000
+      internalID: -189509274695365493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_40
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 2207
+        width: 566
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c76bbfae162fe80800000000000000
+      internalID: -8146341114086523839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_41
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2334
+        width: 553
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b945e227a14c3ad0800000000000000
+      internalID: -2721227888737826383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_42
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 2207
+        width: 554
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83464d1d1b2201bb0800000000000000
+      internalID: -4967432241864743880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_43
+      rect:
+        serializedVersion: 2
+        x: 3212
+        y: 2223
+        width: 555
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e540a306958a420800000000000000
+      internalID: 2641459451277893230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_44
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 2485
+        width: 257
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e075fcf3fc0b504f0800000000000000
+      internalID: -863089349396310258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_45
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 2320
+        width: 260
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b20253546fbdff0800000000000000
+      internalID: -10143797033817228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1817
+        width: 574
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf9c263c23e60100800000000000000
+      internalID: 73996222925152198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_47
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1664
+        width: 576
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a0b2ef08cbbaab0800000000000000
+      internalID: -4995692099431363990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_48
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1951
+        width: 567
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef6d7f044ccdd400800000000000000
+      internalID: 350660938694488038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_49
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1819
+        width: 567
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649c1d3afa9a36310800000000000000
+      internalID: 1397146881247791430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_50
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 1963
+        width: 564
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921eee21f1f67b730800000000000000
+      internalID: 4014799772076400937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_51
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 2089
+        width: 295
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1e90e1450c52ad0800000000000000
+      internalID: -2727562531789217376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_52
+      rect:
+        serializedVersion: 2
+        x: 3041
+        y: 1933
+        width: 168
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4240ef56ed0631980800000000000000
+      internalID: -8569399157645769692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_53
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 1839
+        width: 582
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d199ae310595cba30800000000000000
+      internalID: 4232355950287821085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_54
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 1979
+        width: 297
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25297e4651e3ef290800000000000000
+      internalID: -7854772438479433134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_55
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 1554
+        width: 584
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15823423eb93eda40800000000000000
+      internalID: 5394812892686264401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_56
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 1966
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f939a365389293dc0800000000000000
+      internalID: -3658847578197683297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_57
+      rect:
+        serializedVersion: 2
+        x: 3831
+        y: 1810
+        width: 265
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb22792880ba9ba0800000000000000
+      internalID: -6081354247953044512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 599
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98077106088e0e860800000000000000
+      internalID: 7557295812793299081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_59
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1603
+        width: 578
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baaa5c9c5ecb1bb0800000000000000
+      internalID: -4964147267090339151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_60
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1484
+        width: 585
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b774f92611d1260800000000000000
+      internalID: 7069826105318275907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_61
+      rect:
+        serializedVersion: 2
+        x: 3041
+        y: 1689
+        width: 174
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07a08a689209c090800000000000000
+      internalID: -8013871208283986163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_62
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 1428
+        width: 177
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46f1be01f52fdbe0800000000000000
+      internalID: -1450398837726120369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_63
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 1276
+        width: 584
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b845068f963791950800000000000000
+      internalID: 6420289642769175691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_64
+      rect:
+        serializedVersion: 2
+        x: 3831
+        y: 1463
+        width: 265
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194d89ab01c4ddfb0800000000000000
+      internalID: -4621454007878495087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1079
+        width: 618
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd60cd2ce50752b70800000000000000
+      internalID: 8873622193101866716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_66
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1321
+        width: 602
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24ab27fdcd0f51f0800000000000000
+      internalID: -1054108609515117526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_67
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 522
+        width: 627
+        height: 801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfe44f5b597546e0800000000000000
+      internalID: -1853942238245752876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_68
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1260
+        width: 603
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b60d869a32e2c70800000000000000
+      internalID: 8948128720146688787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_69
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 1153
+        width: 604
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cdacd2a15e908d0800000000000000
+      internalID: -2879518586126541671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_70
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1175
+        width: 586
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f26e72bcd8bea200800000000000000
+      internalID: 193295092050453241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_71
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 1175
+        width: 229
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef3fc097531fcdc0800000000000000
+      internalID: -3616650708942635030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_72
+      rect:
+        serializedVersion: 2
+        x: 3318
+        y: 1299
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7abed472af22ce0800000000000000
+      internalID: -1431306684832438305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_73
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 1317
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d643e78328cafee60800000000000000
+      internalID: 7993797538899440749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_74
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 1312
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0773b3b194c70480800000000000000
+      internalID: -8932955205801904369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_75
+      rect:
+        serializedVersion: 2
+        x: 3537
+        y: 1316
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd75b7d2259f4010800000000000000
+      internalID: 1175322004647411150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_76
+      rect:
+        serializedVersion: 2
+        x: 3876
+        y: 1271
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4330328910fe87a40800000000000000
+      internalID: 5366301746138383156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_77
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 1304
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1343ebddd762e10800000000000000
+      internalID: 2172562261585179129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_78
+      rect:
+        serializedVersion: 2
+        x: 3531
+        y: 1294
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282103892ff865b80800000000000000
+      internalID: -8406373382342307198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_79
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1305
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6605399bdbf072230800000000000000
+      internalID: 3613874533524787302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_80
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 1299
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e861059ec0d8e60800000000000000
+      internalID: 7966037512098844275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_81
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 1290
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4517435b9f365d00800000000000000
+      internalID: 961025506839827786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_82
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 1295
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5436b606d0eda490800000000000000
+      internalID: -7733277775285046177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 534
+        width: 449
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0051d2cf07138930800000000000000
+      internalID: 4144181438571433998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_84
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 922
+        width: 605
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5278b11a30a2e360800000000000000
+      internalID: 7197491325757321821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_85
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 803
+        width: 606
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a31e8fd6f669e510800000000000000
+      internalID: 1578906354868687783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_86
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 389
+        width: 685
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a6fc5b4c67840a0800000000000000
+      internalID: -6897132242081977735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_87
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 785
+        width: 571
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c319afdb615af0b60800000000000000
+      internalID: 7714566203804127548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_88
+      rect:
+        serializedVersion: 2
+        x: 3876
+        y: 1031
+        width: 195
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bc775f11c64c580800000000000000
+      internalID: -8807796146841334996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_89
+      rect:
+        serializedVersion: 2
+        x: 3876
+        y: 838
+        width: 201
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2133a7b89d9e42c60800000000000000
+      internalID: 7792610375815017234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_90
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 930
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc11ebcb8d82f8430800000000000000
+      internalID: 3787290722986496461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_91
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 410
+        width: 629
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8def5c1eea2b710800000000000000
+      internalID: 1707619493439527123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_92
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 412
+        width: 609
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00590dc06d631d30800000000000000
+      internalID: 4400981523395334155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_93
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 396
+        width: 614
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46db90f8f914e75c0800000000000000
+      internalID: -4215860047616819868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_94
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 782
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014b7c0dd37351960800000000000000
+      internalID: 7572019087128638480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_95
+      rect:
+        serializedVersion: 2
+        x: 3888
+        y: 613
+        width: 193
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf674550526cab00800000000000000
+      internalID: 841155327579090910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_96
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 715
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3d07c78967be1f0800000000000000
+      internalID: -1014586893747039328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 469
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ed5ccb84d53afc0800000000000000
+      internalID: -3484839119668519373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_98
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 516
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0c1785416b2e810800000000000000
+      internalID: 1793195800146329848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_99
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 0
+        width: 679
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08198266392b7fd0800000000000000
+      internalID: -2343233867558086645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_100
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 426
+        width: 216
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946fb8ce614a02910800000000000000
+      internalID: 1810627468567770697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_101
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 0
+        width: 658
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17d8045db6bdd260800000000000000
+      internalID: 7124051109844932382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_102
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 0
+        width: 647
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8f23f723da98d00800000000000000
+      internalID: 975501226696439976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_103
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 0
+        width: 619
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9740188917de00a0800000000000000
+      internalID: -6913351873310210145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_104
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 0
+        width: 618
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186063748e70501e0800000000000000
+      internalID: -2232369346083682687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2050916_105
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 0
+        width: 209
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42a04f5b5baf6690800000000000000
+      internalID: -7606672836677033394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

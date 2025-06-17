@@ -2,7 +2,7 @@ using UnityEngine;
 
 public interface IEnemyHealthManager
 {
-
+    public void ReduceHealth(uint health);
 }
 
 public class EnemyHealthManager : MonoBehaviour, IEnemyHealthManager
@@ -17,5 +17,10 @@ public class EnemyHealthManager : MonoBehaviour, IEnemyHealthManager
     {
         this.enemyState = enemyState;
         this.enemyContext = enemyContext;
+    }
+
+    public void ReduceHealth(uint health)
+    {
+        
     }
 }
