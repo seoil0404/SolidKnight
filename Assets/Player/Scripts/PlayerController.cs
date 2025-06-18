@@ -4,6 +4,7 @@ using UnityEngine;
 public interface IPlayerController
 {
     public Coroutine StartCoroutine(IEnumerator routine);
+    public void StopCoroutine(Coroutine routine);
 }
 
 [RequireComponent(typeof(PlayerHealthManager))]

@@ -9,6 +9,7 @@ public interface IPlayerCombatHandler
     public void EndCombo();
     public bool IsParring();
     public void OnParringSucces();
+    public void StopAttack();
     public Hitbox HitBoxPrefab { get; }
 }
 
@@ -31,6 +32,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
     private Coroutine parringCooldown = null;
 
     private List<IPlayerAttackPattern> attackPatterns = new();
+    private IPlayerAttackPattern currentAttackPattern;
 
     private bool isParring = false;
 
@@ -58,6 +60,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             if (resetComboCoroutine != null) StopCoroutine(resetComboCoroutine);
 
             attackPatterns[currentCombo].StartAttack(playerState, playerContext);
+            currentAttackPattern = attackPatterns[currentCombo];
 
             playerState.IsAttacking = true;
             playerState.AllowMove = false;
@@ -95,6 +98,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
     {
         playerState.IsAttacking = false;
         playerContext.MovementHandler.SetVelocity(Vector2.zero);
+        playerState.AllowMove = true;
         resetComboCoroutine = StartCoroutine(ResetCombo());
     }
 
@@ -102,7 +106,6 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
     {
         yield return new WaitForSeconds(comboInterval);
         playerContext.RenderManager.OnAttackEnded();
-        playerState.AllowMove = true;
         currentCombo = 0;
     }
 
@@ -115,9 +118,13 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
         parringCooldown = null;
     }
 
+    public void StopAttack() =>
+        currentAttackPattern.StopAttack();
+
     private interface IPlayerAttackPattern
     {
         public void StartAttack(PlayerState playerState, PlayerContext playerContext);
+        public void StopAttack();
     }
 
     private abstract class PlayerAttackPattern : IPlayerAttackPattern
@@ -133,14 +140,26 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             StartAttack();
         }
 
+        public abstract void StopAttack();
+
         protected abstract void StartAttack();
     }
 
     private class FirstComboAttackPattern : PlayerAttackPattern
     {
+        private Coroutine currentCoroutine = null;
+        private Hitbox currentHitBox = null;
+
+        public override void StopAttack()
+        {
+            if(currentCoroutine != null) playerContext.Controller.StopCoroutine(currentCoroutine);
+            if(currentHitBox != null) Destroy(currentHitBox.gameObject);
+            playerContext.CombatHandler.EndCombo();
+        }
+
         protected override void StartAttack()
         {
-            playerContext.Controller.StartCoroutine(Attack());
+            currentCoroutine = playerContext.Controller.StartCoroutine(Attack());
         }
 
         private IEnumerator Attack()
@@ -148,7 +167,8 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             playerContext.RenderManager.Play("Combo1");
             playerContext.MovementHandler.SetVelocity(Vector2.zero);
 
-            Hitbox currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
+            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
+
             if (playerState.FlipX) currentHitBox.transform.localPosition = new Vector3(-2, 0, 0);
             else currentHitBox.transform.localPosition = new Vector3(2, 0, 0);
 
@@ -162,9 +182,19 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
 
     private class SecondComboAttackPattern : PlayerAttackPattern
     {
+        private Coroutine currentCoroutine = null;
+        private Hitbox currentHitBox = null;
+
+        public override void StopAttack()
+        {
+            if (currentCoroutine != null) playerContext.Controller.StopCoroutine(currentCoroutine);
+            if (currentHitBox != null) Destroy(currentHitBox.gameObject);
+            playerContext.CombatHandler.EndCombo();
+        }
+
         protected override void StartAttack()
         {
-            playerContext.Controller.StartCoroutine(Attack());
+            currentCoroutine = playerContext.Controller.StartCoroutine(Attack());
         }
 
         private IEnumerator Attack()
@@ -172,7 +202,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             playerContext.RenderManager.Play("Combo2");
             playerContext.MovementHandler.SetVelocity(Vector2.zero);
 
-            Hitbox currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
+            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
             if(playerState.FlipX) currentHitBox.transform.localPosition = new Vector3(-2, 0, 0);
             else currentHitBox.transform.localPosition = new Vector3(2, 0, 0);
 
@@ -186,9 +216,19 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
 
     private class ThirdComboAttackPattern : PlayerAttackPattern
     {
+        private Coroutine currentCoroutine = null;
+        private Hitbox currentHitBox = null;
+
+        public override void StopAttack()
+        {
+            if (currentCoroutine != null) playerContext.Controller.StopCoroutine(currentCoroutine);
+            if (currentHitBox != null) Destroy(currentHitBox.gameObject);
+            playerContext.CombatHandler.EndCombo();
+        }
+
         protected override void StartAttack()
         {
-            playerContext.Controller.StartCoroutine(Attack());
+            currentCoroutine = playerContext.Controller.StartCoroutine(Attack());
         }
 
         private IEnumerator Attack()
@@ -196,7 +236,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             playerContext.RenderManager.Play("Combo3");
             playerContext.MovementHandler.SetVelocity(Vector2.zero);
 
-            Hitbox currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
+            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
             if (playerState.FlipX) currentHitBox.transform.localPosition = new Vector3(-2, 0, 0);
             else currentHitBox.transform.localPosition = new Vector3(2, 0, 0);
 

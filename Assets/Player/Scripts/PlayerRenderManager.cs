@@ -112,7 +112,7 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
 
     public void OnGetHit()
     {
-        
+        CinemachineManager.Instance.ShakeCamera(0.3f);
     }
 
     public void OnDeath()
