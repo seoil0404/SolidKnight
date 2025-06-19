@@ -7,6 +7,8 @@ public interface IEnemyHealthManager
 
 public class EnemyHealthManager : MonoBehaviour, IEnemyHealthManager
 {
+    [SerializeField] private int health;
+
     private EnemyContext enemyContext;
     private EnemyState enemyState;
 
@@ -21,6 +23,16 @@ public class EnemyHealthManager : MonoBehaviour, IEnemyHealthManager
 
     public void ReduceHealth(uint health)
     {
-        
+        this.health -= (int)health;
+        if (this.health <= 0) Death();
+    }
+
+    private void Death()
+    {
+        GameManager.Victory();
+        enemyContext.MovementHandler.SetVelocity(Vector2.zero);
+        enemyContext.CombatHandler.StopAttack();
+        enemyContext.RenderManager.OnDeath();
+        enemyContext.Controller.StopEnemy();
     }
 }

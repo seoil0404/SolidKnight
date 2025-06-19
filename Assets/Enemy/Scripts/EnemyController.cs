@@ -4,6 +4,8 @@ using UnityEngine;
 public interface IEnemyController
 {
     public Coroutine StartCoroutine(IEnumerator routine);
+    public void StopCoroutine(Coroutine routine);
+    public void StopEnemy();
 }
 
 [RequireComponent(typeof(EnemyMovementHandler))]
@@ -19,6 +21,10 @@ public class EnemyController : MonoBehaviour, IEnemyController
     private EnemyRenderManager renderManager;
     private EnemyCombatHandler combatHandler;
     private EnemyMovementHandler movementHandler;
+
+    private bool isStop = false;
+
+    public void StopEnemy() => isStop = true;
 
     private void Awake()
     {
@@ -62,6 +68,8 @@ public class EnemyController : MonoBehaviour, IEnemyController
 
     private void Update()
     {
+        if (isStop) return;
+
         movementHandler.HandleMovement();
         renderManager.HandleRender();
         combatHandler.HandleCombat();

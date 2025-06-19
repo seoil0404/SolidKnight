@@ -4,6 +4,7 @@ using UnityEngine;
 public interface IEnemyAttackPattern
 {
     public void StartAttack(EnemyState enemyState, EnemyContext enemyContext);
+    public void StopAttack();
 }
 
 public abstract class EnemyAttackPattern : IEnemyAttackPattern
@@ -20,4 +21,5 @@ public abstract class EnemyAttackPattern : IEnemyAttackPattern
     }
 
     protected abstract void StartAttack();
+    public abstract void StopAttack();
 }

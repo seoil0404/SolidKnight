@@ -5,6 +5,8 @@ public interface IPlayerController
 {
     public Coroutine StartCoroutine(IEnumerator routine);
     public void StopCoroutine(Coroutine routine);
+    public void StopPlayer();
+    public void ResumePlayer();
 }
 
 [RequireComponent(typeof(PlayerHealthManager))]
@@ -22,6 +24,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private PlayerMovementHandler movementHandler;
     private PlayerCombatHandler combatHandler;
     private PlayerRenderManager renderManager;
+
+    private bool isStop = false;
 
     private void Awake()
     {
@@ -69,11 +73,24 @@ public class PlayerController : MonoBehaviour, IPlayerController
             animator: GetComponent<Animator>(),
             spriteRenderer: GetComponent<SpriteRenderer>()
             );
+
+        GameManager.PlayerController = this;
     }
 
     private void Update()
     {
+        if(isStop) return;
+
         movementHandler.HandleMovement();
         combatHandler.HandleCombat();
+        renderManager.UpdateHealthSlider();
     }
+
+    public void StopPlayer()
+    {
+        movementHandler.SetVelocity(Vector2.zero);
+        isStop = true;
+    }
+
+    public void ResumePlayer() => isStop = false;
 }

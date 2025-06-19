@@ -8,6 +8,7 @@ public interface IPlayerMovementHandler
     public void SetVelocity(Vector2 vector2);
     public Transform Transform { get; }
     public bool IsWalking();
+    public void OnParringSucces();
 }
 
 public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
@@ -24,6 +25,9 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
     [SerializeField] private float dashPower;
     [SerializeField] private float dashDelay;
 
+    [Header("Parring")]
+    [SerializeField] private float parringKnockBackRate;
+
     private PlayerState playerState;
     private PlayerContext playerContext;
     private Rigidbody2D playerRigidBody;
@@ -32,8 +36,8 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
     private float gravityScale;
 
     private Coroutine dashCoroutine = null;
-
     public Transform Transform => transform;
+
 
     public void Initialize(
         PlayerState playerState, 
@@ -50,6 +54,11 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
 
     public void HandleMovement()
     {
+        if(playerContext.CombatHandler.IsParring())
+        {
+            if (!(Input.GetKeyDown(KeyData.Left) || Input.GetKeyDown(KeyData.Right) || Input.GetKeyDown(KeyData.Jump) || Input.GetKeyDown(KeyData.Dash)))
+                return;
+        }
         if (!playerState.AllowMove)
             return;
 
@@ -151,4 +160,19 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
 
     public bool IsWalking() =>
         playerState.IsGround && playerRigidBody.linearVelocityX != 0 && dashCoroutine == null;
+
+    public void OnParringSucces()
+    {
+        if(playerState.FlipX) playerRigidBody.AddForceX(parringKnockBackRate);
+        else playerRigidBody.AddForceX(-parringKnockBackRate);
+
+        StartCoroutine(ParringKnockback());
+    }
+
+    private IEnumerator ParringKnockback()
+    {
+        playerState.AllowMove = false;
+        yield return new WaitForSeconds(0.1f);
+        playerState.AllowMove = true;
+    }
 }

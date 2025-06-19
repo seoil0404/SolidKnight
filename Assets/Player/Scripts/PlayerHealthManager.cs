@@ -1,9 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public interface IPlayerHealthManager
 {
     public bool ReduceHealth(uint health);
+    public int MaxHealth { get; }
+    public int CurrentHealth { get; }
 }
 
 public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
@@ -13,6 +16,12 @@ public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
     private PlayerState playerState;
     private PlayerContext playerContext;
 
+    private int maxHealth;
+
+    public int MaxHealth => maxHealth;
+
+    public int CurrentHealth => health;
+
     public void Initialize(
         PlayerState playerState, 
         PlayerContext playerContext
@@ -20,6 +29,8 @@ public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
     {
         this.playerState = playerState;
         this.playerContext = playerContext;
+
+        maxHealth = health;
     }
 
     public bool ReduceHealth(uint health)

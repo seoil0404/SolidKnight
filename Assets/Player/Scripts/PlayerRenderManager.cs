@@ -1,6 +1,7 @@
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public interface IPlayerRenderManager
 {
@@ -17,12 +18,15 @@ public interface IPlayerRenderManager
     public void SetTimeScale(float timeScale);
     public void FadeColor(Color startColor, Color endColor, float time);
     public void GenerateDust();
+    public void OnParringSucces();
     public bool IsPlaying(string name);
+    public void UpdateHealthSlider();
 }
 
 public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
 {
     [SerializeField] private EffectData effectData;
+    [SerializeField] private Slider healthSlider;
 
     private PlayerState playerState;
     private PlayerContext playerContext;
@@ -92,7 +96,7 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
 
         playerState.FlipX = spriteRenderer.flipX;
 
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Walk") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Walk") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Run") && playerState.IsGround)
             animator.Play("Run");
     }
 
@@ -140,5 +144,19 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
     public void GenerateDust()
     {
         Instantiate(effectData.Dust).transform.position = transform.position + new Vector3(0, -1.5f, 0);
+    }
+
+    public void OnParringSucces()
+    {
+        CinemachineManager.Instance.ShakeCamera(0.3f);
+    }
+
+    public void UpdateHealthSlider()
+    {
+        healthSlider.value = Mathf.Lerp(
+            (float)playerContext.HealthManager.CurrentHealth / (float)playerContext.HealthManager.MaxHealth, 
+            healthSlider.value, 
+            0.9f
+            );
     }
 }

@@ -115,6 +115,9 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
     public void OnParringSucces()
     {
         StopCoroutine(parringCooldown);
+        playerContext.MovementHandler.OnParringSucces();
+        playerContext.RenderManager.OnParringSucces();
+
         parringCooldown = null;
     }
 

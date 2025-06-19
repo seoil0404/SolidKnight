@@ -4,6 +4,7 @@ using UnityEngine;
 public interface IEnemyCombatHandler
 {
     public void OnEndAttack();
+    public void StopAttack();
     public Hitbox HitBoxPrefab { get; }
 }
 
@@ -15,6 +16,8 @@ public class EnemyCombatHandler : MonoBehaviour, IEnemyCombatHandler
 
     private EnemyContext enemyContext;
     private EnemyState enemyState;
+
+    private IEnemyAttackPattern currentAttackPattern = null;
 
     public Hitbox HitBoxPrefab => hitboxPrefab;
 
@@ -35,6 +38,8 @@ public class EnemyCombatHandler : MonoBehaviour, IEnemyCombatHandler
 
             int randomIndex = Random.Range(0, patternData.AttackPatterns.Count);
             patternData.AttackPatterns[randomIndex].StartAttack(enemyState, enemyContext);
+
+            currentAttackPattern = patternData.AttackPatterns[randomIndex];
         }
     }
 
@@ -49,4 +54,7 @@ public class EnemyCombatHandler : MonoBehaviour, IEnemyCombatHandler
         enemyState.Behavior = EnemyState.BehaviorType.Idle;
         enemyContext.RenderManager.ResetAnimationState();
     }
+
+    public void StopAttack() =>
+        currentAttackPattern.StopAttack();
 }

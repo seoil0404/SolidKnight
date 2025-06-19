@@ -12,9 +12,18 @@ public class MutantPatternData : EnemyPatternData
 
     public class JumpAttackPattern : EnemyAttackPattern
     {
+        private Hitbox currentHitBox = null;
+        private Coroutine currentCoroutine = null;
+
         protected override void StartAttack()
         {
-            enemyContext.Controller.StartCoroutine(Attack());
+            currentCoroutine = enemyContext.Controller.StartCoroutine(Attack());
+        }
+
+        public override void StopAttack()
+        {
+            if (currentHitBox != null) Destroy(currentHitBox);
+            if(currentCoroutine != null) enemyContext.Controller.StopCoroutine(currentCoroutine);
         }
 
         private IEnumerator Attack()
@@ -37,12 +46,13 @@ public class MutantPatternData : EnemyPatternData
 
             yield return new WaitForSeconds(0.3f);
 
-            Hitbox currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(4, 3), 1);
+            currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(4, 3), 1);
             currentHitBox.transform.localPosition = new Vector3(0, -2, 0);
 
             yield return new WaitForSeconds(0.05f);
 
             if (currentHitBox != null) Destroy(currentHitBox.gameObject);
+            enemyContext.RenderManager.ShakeCamera(1f);
 
             enemyContext.MovementHandler.SetVelocity(Vector2.zero);
 
@@ -51,9 +61,18 @@ public class MutantPatternData : EnemyPatternData
     }
     public class PunchAttackPattern : EnemyAttackPattern
     {
+        private Hitbox currentHitBox = null;
+        private Coroutine currentCoroutine = null;
+
         protected override void StartAttack()
         {
-            enemyContext.Controller.StartCoroutine(Attack());
+            currentCoroutine = enemyContext.Controller.StartCoroutine(Attack());
+        }
+
+        public override void StopAttack()
+        {
+            if (currentHitBox != null) Destroy(currentHitBox);
+            if (currentCoroutine != null) enemyContext.Controller.StopCoroutine(currentCoroutine);
         }
 
         private IEnumerator Attack()
@@ -69,7 +88,7 @@ public class MutantPatternData : EnemyPatternData
 
             yield return new WaitForSeconds(0.05f);
 
-            Hitbox currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(7, 5), 1);
+            currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(7, 5), 1);
             currentHitBox.transform.localPosition = new Vector3(1 * moveRate, -3, 0);
 
             yield return new WaitForSeconds(0.05f);
@@ -96,9 +115,18 @@ public class MutantPatternData : EnemyPatternData
     }
     public class DropAttackPattern : EnemyAttackPattern
     {
+        private Hitbox currentHitBox = null;
+        private Coroutine currentCoroutine = null;
+
         protected override void StartAttack()
         {
-            enemyContext.Controller.StartCoroutine(Attack());
+            currentCoroutine = enemyContext.Controller.StartCoroutine(Attack());
+        }
+
+        public override void StopAttack()
+        {
+            if (currentHitBox != null) Destroy(currentHitBox);
+            if (currentCoroutine != null) enemyContext.Controller.StopCoroutine(currentCoroutine);
         }
 
         private IEnumerator Attack()
@@ -119,8 +147,9 @@ public class MutantPatternData : EnemyPatternData
 
             yield return new WaitForSeconds(0.075f);
 
-            Hitbox currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(4, 3), 1);
+            currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(4, 3), 1);
             currentHitBox.transform.localPosition = new Vector3(0, -2, 0);
+            enemyContext.RenderManager.ShakeCamera(1f);
 
             yield return new WaitForSeconds(0.025f);
 
