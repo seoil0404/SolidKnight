@@ -8,11 +8,18 @@ public class CinemachineManager : MonoBehaviour
 {
     static public CinemachineManager Instance { get; private set; }
 
+    public Vector3 PositionDamping
+    {
+        get => cinemachineFollow.TrackerSettings.PositionDamping;
+        set => cinemachineFollow.TrackerSettings.PositionDamping = value;
+    }
+
     private CinemachineFollow cinemachineFollow;
     private CinemachineCamera CinemachineCamera;
     private void Awake()
     {
-        Instance = this;
+        if(Instance == null) Instance = this;
+        else if(gameObject != null) Destroy(gameObject);
 
         cinemachineFollow = GetComponent<CinemachineFollow>();
         CinemachineCamera = GetComponent<CinemachineCamera>();

@@ -101,7 +101,7 @@ public class EnemyRenderManager : MonoBehaviour, IEnemyRenderManager
     {
         animator.Play("Death", 0);
         CinemachineManager.Instance.ShakeCamera(
-            duration: 10,
+            duration: 6,
             strength: 1,
             vibrato: 20,
             randomness: 90,

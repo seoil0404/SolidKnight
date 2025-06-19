@@ -6,6 +6,7 @@ public interface IPlayerController
     public Coroutine StartCoroutine(IEnumerator routine);
     public void StopCoroutine(Coroutine routine);
     public void StopPlayer();
+    public void StopPlayer(float stopTime);
     public void ResumePlayer();
 }
 
@@ -19,7 +20,7 @@ public interface IPlayerController
 public class PlayerController : MonoBehaviour, IPlayerController
 {
     public static Transform Transform { get; private set; }
-
+    
     private PlayerHealthManager healthManager;
     private PlayerMovementHandler movementHandler;
     private PlayerCombatHandler combatHandler;
@@ -34,7 +35,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
             Destroy(gameObject);
             return;
         }
-        
+
+        DontDestroyOnLoad(gameObject);
         Transform = transform;
 
         PlayerState playerState = new();
@@ -93,4 +95,16 @@ public class PlayerController : MonoBehaviour, IPlayerController
     }
 
     public void ResumePlayer() => isStop = false;
+
+    public void StopPlayer(float stopTime)
+    {
+        StartCoroutine(StopPlayerByTime(stopTime));
+    }
+
+    private IEnumerator StopPlayerByTime(float stopTime)
+    {
+        StopPlayer();
+        yield return new WaitForSeconds(stopTime);
+        ResumePlayer();
+    }
 }
