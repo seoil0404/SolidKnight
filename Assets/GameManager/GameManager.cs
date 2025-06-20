@@ -60,6 +60,9 @@ public class GameManager : MonoBehaviour
             case SceneType.Start:
                 StartCoroutine(LoadScene("StartScene", fadeTime, delayTime));
                 break;
+            case SceneType.Tutorial:
+                StartCoroutine(LoadScene("TutorialScene", fadeTime, delayTime));
+                break;
             default:
                 Debug.LogWarning("Invalid Scene Type: " + sceneType.ToString());
                 break;
@@ -90,5 +93,5 @@ public class GameManager : MonoBehaviour
     }
 
     public enum SceneType
-    { Start, Game }
+    { Start, Game, Tutorial }
 }

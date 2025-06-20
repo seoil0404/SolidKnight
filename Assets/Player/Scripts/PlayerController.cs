@@ -88,11 +88,12 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void Update()
     {
-        if(isStop) return;
+        renderManager.UpdateHealthSlider();
+
+        if (isStop) return;
 
         movementHandler.HandleMovement();
         combatHandler.HandleCombat();
-        renderManager.UpdateHealthSlider();
     }
 
     public void StopPlayer()

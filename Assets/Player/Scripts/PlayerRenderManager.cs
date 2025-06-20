@@ -65,6 +65,9 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
 
     private void ResetAnimationState()
     {
+        if (playerState.IsDeath)
+            return;
+
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Parring"))
             return;
 

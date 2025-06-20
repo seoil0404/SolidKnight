@@ -177,7 +177,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             playerContext.RenderManager.Play("Combo1");
             playerContext.MovementHandler.SetVelocity(Vector2.zero);
 
-            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
+            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(4.5f, 3), 1);
 
             if (playerState.FlipX) currentHitBox.transform.localPosition = new Vector3(-2, 0, 0);
             else currentHitBox.transform.localPosition = new Vector3(2, 0, 0);
@@ -212,7 +212,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             playerContext.RenderManager.Play("Combo2");
             playerContext.MovementHandler.SetVelocity(Vector2.zero);
 
-            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
+            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(4.5f, 3), 1);
             if(playerState.FlipX) currentHitBox.transform.localPosition = new Vector3(-2, 0, 0);
             else currentHitBox.transform.localPosition = new Vector3(2, 0, 0);
 
@@ -246,7 +246,7 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
             playerContext.RenderManager.Play("Combo3");
             playerContext.MovementHandler.SetVelocity(Vector2.zero);
 
-            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(3, 3), 1);
+            currentHitBox = Instantiate(playerContext.CombatHandler.HitBoxPrefab, playerContext.MovementHandler.Transform).Initialize(Hitbox.Target.Enemy, new Vector2(4.5f, 3), 1);
             if (playerState.FlipX) currentHitBox.transform.localPosition = new Vector3(-2, 0, 0);
             else currentHitBox.transform.localPosition = new Vector3(2, 0, 0);
 
