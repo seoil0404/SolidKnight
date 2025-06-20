@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public interface IEnemyHealthManager
@@ -29,7 +30,11 @@ public class EnemyHealthManager : MonoBehaviour, IEnemyHealthManager
 
     private void Death()
     {
-        GameManager.Victory();
+        if (GameManager.IsGameInitializing) return;
+
+        float time = 6;
+        GameManager.Victory(time);
+
         enemyContext.MovementHandler.SetVelocity(Vector2.zero);
         enemyContext.CombatHandler.StopAttack();
         enemyContext.RenderManager.OnDeath();

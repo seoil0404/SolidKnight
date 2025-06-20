@@ -7,6 +7,7 @@ public class PlayerState
     public bool IsGround = true;
     public bool IsAttacking = false;
     public bool FlipX = false;
+    public bool IsDeath = false;
 }
 
 public class PlayerContext

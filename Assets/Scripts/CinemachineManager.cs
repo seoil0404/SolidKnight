@@ -15,16 +15,20 @@ public class CinemachineManager : MonoBehaviour
     }
 
     private CinemachineFollow cinemachineFollow;
-    private CinemachineCamera CinemachineCamera;
+    private CinemachineCamera cinemachineCamera;
     private void Awake()
     {
-        if(Instance == null) Instance = this;
-        else if(gameObject != null) Destroy(gameObject);
+        Instance = this;
 
         cinemachineFollow = GetComponent<CinemachineFollow>();
-        CinemachineCamera = GetComponent<CinemachineCamera>();
+        cinemachineCamera = GetComponent<CinemachineCamera>();
     }
-    
+
+    private void Start()
+    {
+        cinemachineCamera.Follow = GameManager.PlayerController.TrackingSubject;
+    }
+
     public void ShakeCamera(
         float duration, 
         float strength = 1f, 
@@ -37,7 +41,7 @@ public class CinemachineManager : MonoBehaviour
 
         Vector3 presentValue = cinemachineFollow.TrackerSettings.PositionDamping;
         cinemachineFollow.TrackerSettings.PositionDamping = Vector3.zero;
-        CinemachineCamera.Follow.DOShakePosition(duration, strength, vibrato, randomness, snapping, fadeOut).SetUpdate(true);
+        cinemachineCamera.Follow.DOShakePosition(duration, strength, vibrato, randomness, snapping, fadeOut).SetUpdate(true);
         StartCoroutine(ResetPositionDamping(presentValue, duration));
     }
 

@@ -121,7 +121,7 @@ public class PlayerRenderManager : MonoBehaviour, IPlayerRenderManager
 
     public void OnDeath()
     {
-        
+        animator.Play("Death");
     }
 
     public void OnParring()

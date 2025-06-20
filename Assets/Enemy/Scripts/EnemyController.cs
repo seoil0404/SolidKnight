@@ -69,6 +69,11 @@ public class EnemyController : MonoBehaviour, IEnemyController
     private void Update()
     {
         if (isStop) return;
+        if(GameManager.PlayerController.IsDeath)
+        {
+            StopEnemy();
+            return;
+        }
 
         movementHandler.HandleMovement();
         renderManager.HandleRender();

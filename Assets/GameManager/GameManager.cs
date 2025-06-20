@@ -8,25 +8,46 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LoadView loadViewPrefab;
     public static GameManager Instance { get; private set; }
     public static IPlayerController PlayerController { get; set; }
+    public static bool IsGameInitializing { get; private set; }
 
     [RuntimeInitializeOnLoadMethod]
     private static void Initialize()
     {
         GameObject newGameObject = new GameObject(typeof(GameManager).Name);
         Instance = newGameObject.AddComponent<GameManager>();
+
+        IsGameInitializing = false;
         
         DontDestroyOnLoad(newGameObject);
     }
 
-    public static void Victory()
+    public static void Victory(float time)
     {
-        PlayerController.StopPlayer(6);
-        Instance.LoadScene(SceneType.Start, 3, 3);
+        if (IsGameInitializing) return;
+
+        Debug.Log("Victory");
+
+        PlayerController.StopPlayer(time);
+        Instance.LoadScene(SceneType.Start, time/2, time/2);
+        Instance.StartCoroutine(InitializeGame(time));
     }
 
-    public static void Defeat()
+    public static void Defeat(float time)
     {
+        if (IsGameInitializing) return;
 
+        Debug.Log("Defeat");
+
+        PlayerController.StopPlayer(time);
+        Instance.LoadScene(SceneType.Start, time/2, time/2);
+        Instance.StartCoroutine(InitializeGame(time));
+    }
+
+    private static IEnumerator InitializeGame(float time)
+    {
+        IsGameInitializing = true;
+        yield return new WaitForSecondsRealtime(time);
+        IsGameInitializing = false;
     }
 
     public void LoadScene(SceneType sceneType, float fadeTime = 0.5f, float delayTime = 0f)

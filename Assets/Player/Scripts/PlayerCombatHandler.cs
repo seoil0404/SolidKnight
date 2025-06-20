@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -105,6 +106,9 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
     private IEnumerator ResetCombo()
     {
         yield return new WaitForSeconds(comboInterval);
+        
+        if (playerState.IsDeath) yield break;
+
         playerContext.RenderManager.OnAttackEnded();
         currentCombo = 0;
     }
@@ -121,8 +125,11 @@ public class PlayerCombatHandler : MonoBehaviour, IPlayerCombatHandler
         parringCooldown = null;
     }
 
-    public void StopAttack() =>
-        currentAttackPattern.StopAttack();
+    public void StopAttack()
+    {
+        if(currentAttackPattern != null) currentAttackPattern.StopAttack();
+    }
+        
 
     private interface IPlayerAttackPattern
     {

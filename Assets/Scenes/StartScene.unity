@@ -220,6 +220,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 607567646437669747, guid: 1cc7c803d4ac88d489a4a794e98be711, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 47.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 607567646437669747, guid: 1cc7c803d4ac88d489a4a794e98be711, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -39.919006
+      objectReference: {fileID: 0}
     - target: {fileID: 3698521157446600942, guid: 1cc7c803d4ac88d489a4a794e98be711, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1073,7 +1081,6 @@ GameObject:
   - component: {fileID: 1600660326}
   - component: {fileID: 1600660325}
   - component: {fileID: 1600660324}
-  - component: {fileID: 1600660329}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1233,18 +1240,6 @@ Transform:
   - {fileID: 1889543466}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1600660329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600660323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676099effee43bd4ba0ac3f82ad45e7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1620732205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1378,6 @@ GameObject:
   - component: {fileID: 1623657074}
   - component: {fileID: 1623657073}
   - component: {fileID: 1623657072}
-  - component: {fileID: 1623657077}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -1500,18 +1494,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1623657077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623657071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676099effee43bd4ba0ac3f82ad45e7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1648879872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,7 +1709,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1889543466}
   - component: {fileID: 1889543463}
-  - component: {fileID: 1889543465}
   - component: {fileID: 1889543464}
   m_Layer: 0
   m_Name: Effect Camera
@@ -1831,14 +1812,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &1889543465
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889543462}
-  m_Enabled: 1
 --- !u!4 &1889543466
 Transform:
   m_ObjectHideFlags: 0

@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2798e6fcf449d46ab14464cde7f067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trakingSubject: {fileID: 5352866701688855929}
 --- !u!114 &865146265188772525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,7 +687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5352866701688855929}
   m_Layer: 3
-  m_Name: Shake Subject
+  m_Name: Traking Subject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -45,7 +45,7 @@ public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
 
         this.health -= (int)health;
 
-        if (health < 0) Death();
+        if (this.health <= 0) Death();
         else playerContext.RenderManager.OnGetHit();
 
         return true;
@@ -61,6 +61,12 @@ public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
 
     private void Death()
     {
+        if (GameManager.IsGameInitializing)
+            return;
+
+        float time = 6f;
+        GameManager.Defeat(time);
         playerContext.RenderManager.OnDeath();
+        playerState.IsDeath = true;
     }
 }

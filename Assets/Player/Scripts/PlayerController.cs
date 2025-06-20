@@ -8,6 +8,8 @@ public interface IPlayerController
     public void StopPlayer();
     public void StopPlayer(float stopTime);
     public void ResumePlayer();
+    public bool IsDeath { get; }
+    public Transform TrackingSubject { get; }
 }
 
 [RequireComponent(typeof(PlayerHealthManager))]
@@ -19,8 +21,8 @@ public interface IPlayerController
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour, IPlayerController
 {
-    public static Transform Transform { get; private set; }
-    
+    [SerializeField] private Transform trakingSubject;
+
     private PlayerHealthManager healthManager;
     private PlayerMovementHandler movementHandler;
     private PlayerCombatHandler combatHandler;
@@ -28,19 +30,24 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private bool isStop = false;
 
+    private PlayerState playerState = new();
+    PlayerContext playerContext = new();
+
+    public static Transform Transform { get; private set; }
+
+    public bool IsDeath => playerState.IsDeath;
+
+    public Transform TrackingSubject => trakingSubject;
+
     private void Awake()
     {
         if (Transform != null)
         {
-            Destroy(gameObject);
-            return;
+            Destroy(Transform.gameObject);
         }
 
         DontDestroyOnLoad(gameObject);
         Transform = transform;
-
-        PlayerState playerState = new();
-        PlayerContext playerContext = new();
 
         healthManager = GetComponent<PlayerHealthManager>();
         movementHandler = GetComponent<PlayerMovementHandler>();
@@ -91,6 +98,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public void StopPlayer()
     {
         movementHandler.SetVelocity(Vector2.zero);
+        combatHandler.StopAttack();
+
         isStop = true;
     }
 

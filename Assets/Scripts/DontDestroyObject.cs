@@ -12,7 +12,7 @@ public class DontDestroyObject : MonoBehaviour
         {
             if(obj.name == this.name)
             {
-                Destroy(gameObject);
+                Destroy(obj.gameObject);
                 return;
             }
         }
