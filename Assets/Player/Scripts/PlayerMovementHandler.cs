@@ -9,6 +9,8 @@ public interface IPlayerMovementHandler
     public Transform Transform { get; }
     public bool IsWalking();
     public void OnParringSucces();
+    public void OnFootStep();
+    public void StopPlayer();
 }
 
 public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
@@ -114,6 +116,7 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
         playerState.AllowMove = false;
 
         playerContext.RenderManager.OnDash();
+        playerContext.SoundManager.PlaySound(PlayerSoundManager.SoundType.Dash);
 
         yield return new WaitForSeconds(dashTime);
 
@@ -174,5 +177,13 @@ public class PlayerMovementHandler : MonoBehaviour, IPlayerMovementHandler
         playerState.AllowMove = false;
         yield return new WaitForSeconds(0.1f);
         playerState.AllowMove = true;
+    }
+
+    public void OnFootStep() =>
+        playerContext.SoundManager.PlaySound(PlayerSoundManager.SoundType.FootStep, 0.25f);
+
+    public void StopPlayer()
+    {
+        playerContext.RenderManager.Play("Idle");
     }
 }

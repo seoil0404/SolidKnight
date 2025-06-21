@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2224d436d16263f4cab9f525a81896e5, type: 3}
+  m_Name: SoundData
+  m_EditorClassIdentifier: 
+  swordSlash: {fileID: 8300000, guid: 4f5fff3ca5f8b8847a2e0e1de1e8bc2b, type: 3}
+  parring: {fileID: 8300000, guid: 0462bca638652405a9768706c4ed024c, type: 3}
+  footStep: {fileID: 8300000, guid: 5703b9a3a508ad444bec9dad7fb70581, type: 3}
+  dash: {fileID: 8300000, guid: bea600985d57f74428e2b3b0a314ffff, type: 3}
+  playerHit: {fileID: 8300000, guid: cd937e3ffd4804c5c999fac9ad5dc1d3, type: 3}

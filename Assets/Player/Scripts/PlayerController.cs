@@ -16,6 +16,7 @@ public interface IPlayerController
 [RequireComponent(typeof(PlayerMovementHandler))]
 [RequireComponent(typeof(PlayerCombatHandler))]
 [RequireComponent(typeof(PlayerRenderManager))]
+[RequireComponent(typeof(PlayerSoundManager))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private PlayerMovementHandler movementHandler;
     private PlayerCombatHandler combatHandler;
     private PlayerRenderManager renderManager;
+    private PlayerSoundManager soundManager;
 
     private bool isStop = false;
 
@@ -53,12 +55,15 @@ public class PlayerController : MonoBehaviour, IPlayerController
         movementHandler = GetComponent<PlayerMovementHandler>();
         combatHandler = GetComponent<PlayerCombatHandler>();
         renderManager = GetComponent<PlayerRenderManager>();
+        soundManager = GetComponent<PlayerSoundManager>();
 
         playerContext.Controller = this;
         playerContext.HealthManager = healthManager;
         playerContext.MovementHandler = movementHandler;
         playerContext.CombatHandler = combatHandler;
         playerContext.RenderManager = renderManager;
+        playerContext.SoundManager = soundManager;
+
 
         healthManager.Initialize(
             playerState: playerState,
@@ -83,6 +88,11 @@ public class PlayerController : MonoBehaviour, IPlayerController
             spriteRenderer: GetComponent<SpriteRenderer>()
             );
 
+        soundManager.Initialize(
+            playerState: playerState,
+            playerContext: playerContext
+            );
+
         GameManager.PlayerController = this;
     }
 
@@ -99,6 +109,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public void StopPlayer()
     {
         movementHandler.SetVelocity(Vector2.zero);
+        movementHandler.StopPlayer();
         combatHandler.StopAttack();
 
         isStop = true;

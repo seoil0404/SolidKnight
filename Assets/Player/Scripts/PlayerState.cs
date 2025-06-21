@@ -17,4 +17,5 @@ public class PlayerContext
     public IPlayerController Controller;
     public IPlayerHealthManager HealthManager;
     public IPlayerMovementHandler MovementHandler;
+    public IPlayerSoundManager SoundManager;
 }

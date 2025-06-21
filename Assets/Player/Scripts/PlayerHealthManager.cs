@@ -44,6 +44,7 @@ public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
         }
 
         this.health -= (int)health;
+        playerContext.SoundManager.PlaySound(PlayerSoundManager.SoundType.Hit);
 
         if (this.health <= 0) Death();
         else playerContext.RenderManager.OnGetHit();
@@ -66,6 +67,7 @@ public class PlayerHealthManager : MonoBehaviour, IPlayerHealthManager
 
         float time = 6f;
         GameManager.Defeat(time);
+        playerContext.SoundManager.OnDeath();
         playerContext.RenderManager.OnDeath();
         playerState.IsDeath = true;
     }
