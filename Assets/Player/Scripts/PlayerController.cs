@@ -112,6 +112,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
         movementHandler.StopPlayer();
         combatHandler.StopAttack();
 
+        playerState.AllowMove = false;
         isStop = true;
     }
 

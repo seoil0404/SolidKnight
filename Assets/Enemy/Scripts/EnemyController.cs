@@ -12,6 +12,7 @@ public interface IEnemyController
 [RequireComponent(typeof(EnemyHealthManager))]
 [RequireComponent(typeof(EnemyRenderManager))]
 [RequireComponent(typeof(EnemyCombatHandler))]
+[RequireComponent(typeof(EnemySoundManager))]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -21,6 +22,7 @@ public class EnemyController : MonoBehaviour, IEnemyController
     private EnemyRenderManager renderManager;
     private EnemyCombatHandler combatHandler;
     private EnemyMovementHandler movementHandler;
+    private EnemySoundManager soundManager;
 
     private bool isStop = false;
 
@@ -32,6 +34,7 @@ public class EnemyController : MonoBehaviour, IEnemyController
         renderManager = GetComponent<EnemyRenderManager>();
         combatHandler = GetComponent<EnemyCombatHandler>();
         movementHandler = GetComponent<EnemyMovementHandler>();
+        soundManager = GetComponent<EnemySoundManager>();
 
         EnemyContext enemyContext = new();
         EnemyState enemyState = new();
@@ -41,6 +44,7 @@ public class EnemyController : MonoBehaviour, IEnemyController
         enemyContext.RenderManager = renderManager;
         enemyContext.CombatHandler = combatHandler;
         enemyContext.MovementHandler = movementHandler;
+        enemyContext.SoundManager = soundManager;
 
         healthManager.Initialize(
             enemyState: enemyState,
@@ -63,6 +67,11 @@ public class EnemyController : MonoBehaviour, IEnemyController
             enemyState: enemyState,
             enemyContext: enemyContext,
             enemyRigidBody: GetComponent<Rigidbody2D>()
+            );
+
+        soundManager.Initialize(
+            enemyState: enemyState,
+            enemyContext: enemyContext
             );
     }
 

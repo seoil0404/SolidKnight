@@ -51,6 +51,8 @@ public class MutantPatternData : EnemyPatternData
 
             yield return new WaitForSeconds(0.05f);
 
+            enemyContext.SoundManager.PlaySound(EnemySoundManager.SoundType.GroundHit);
+
             if (currentHitBox != null) Destroy(currentHitBox.gameObject);
             enemyContext.RenderManager.ShakeCamera(1f);
 
@@ -150,6 +152,8 @@ public class MutantPatternData : EnemyPatternData
             currentHitBox = Instantiate(enemyContext.CombatHandler.HitBoxPrefab, enemyContext.MovementHandler.Transform).Initialize(Hitbox.Target.Player, new Vector2(4, 3), 1);
             currentHitBox.transform.localPosition = new Vector3(0, -2, 0);
             enemyContext.RenderManager.ShakeCamera(1f);
+
+            enemyContext.SoundManager.PlaySound(EnemySoundManager.SoundType.GroundHit);
 
             yield return new WaitForSeconds(0.025f);
 

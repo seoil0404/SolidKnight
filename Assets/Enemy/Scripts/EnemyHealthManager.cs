@@ -25,6 +25,8 @@ public class EnemyHealthManager : MonoBehaviour, IEnemyHealthManager
     public void ReduceHealth(uint health)
     {
         this.health -= (int)health;
+        enemyContext.SoundManager.PlaySound(EnemySoundManager.SoundType.Hit);
+
         if (this.health <= 0) Death();
     }
 
@@ -38,6 +40,7 @@ public class EnemyHealthManager : MonoBehaviour, IEnemyHealthManager
         enemyContext.MovementHandler.SetVelocity(Vector2.zero);
         enemyContext.CombatHandler.StopAttack();
         enemyContext.RenderManager.OnDeath();
+        enemyContext.SoundManager.OnDeath();
         enemyContext.Controller.StopEnemy();
     }
 }

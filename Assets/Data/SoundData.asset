@@ -17,3 +17,6 @@ MonoBehaviour:
   footStep: {fileID: 8300000, guid: 5703b9a3a508ad444bec9dad7fb70581, type: 3}
   dash: {fileID: 8300000, guid: bea600985d57f74428e2b3b0a314ffff, type: 3}
   playerHit: {fileID: 8300000, guid: cd937e3ffd4804c5c999fac9ad5dc1d3, type: 3}
+  enemyHit: {fileID: 8300000, guid: 571537bf64ac5fc4286547c2e12eacf4, type: 3}
+  clear: {fileID: 8300000, guid: 8103d354913464158a5c399ab011c028, type: 3}
+  groundHit: {fileID: 8300000, guid: ea56938c69b01804eb3ea64dc039333f, type: 3}

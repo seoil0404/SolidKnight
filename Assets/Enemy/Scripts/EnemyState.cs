@@ -21,4 +21,5 @@ public class EnemyContext
     public IEnemyCombatHandler CombatHandler;
     public IEnemyHealthManager HealthManager;
     public IEnemyController Controller;
+    public IEnemySoundManager SoundManager;
 }
