@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        Cursor.visible = false;
+
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }

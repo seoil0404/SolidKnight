@@ -16,6 +16,9 @@ public class CinemachineManager : MonoBehaviour
 
     private CinemachineFollow cinemachineFollow;
     private CinemachineCamera cinemachineCamera;
+
+    private Vector3 startValue;
+
     private void Awake()
     {
         Instance = this;
@@ -27,6 +30,7 @@ public class CinemachineManager : MonoBehaviour
     private void Start()
     {
         cinemachineCamera.Follow = GameManager.PlayerController.TrackingSubject;
+        startValue = cinemachineCamera.Follow.transform.localPosition;
     }
 
     public void ShakeCamera(
@@ -41,7 +45,7 @@ public class CinemachineManager : MonoBehaviour
 
         Vector3 presentValue = cinemachineFollow.TrackerSettings.PositionDamping;
         cinemachineFollow.TrackerSettings.PositionDamping = Vector3.zero;
-        cinemachineCamera.Follow.DOShakePosition(duration, strength, vibrato, randomness, snapping, fadeOut).SetUpdate(true);
+        cinemachineCamera.Follow.DOShakePosition(duration, strength, vibrato, randomness, snapping, fadeOut).SetUpdate(true).OnComplete(() => { cinemachineCamera.Follow.transform.localPosition = startValue; });
         StartCoroutine(ResetPositionDamping(presentValue, duration));
     }
 
