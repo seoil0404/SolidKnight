@@ -8,17 +8,27 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LoadView loadViewPrefab;
     public static GameManager Instance { get; private set; }
     public static IPlayerController PlayerController { get; set; }
-    public static bool IsGameInitializing { get; private set; }
+    public static bool IsGameInitializing { get; private set; } = false;
 
     [RuntimeInitializeOnLoadMethod]
     private static void Initialize()
     {
-        GameObject newGameObject = new GameObject(typeof(GameManager).Name);
-        Instance = newGameObject.AddComponent<GameManager>();
+        //GameObject newGameObject = new GameObject(typeof(GameManager).Name);
+        //Instance = newGameObject.AddComponent<GameManager>();
 
-        IsGameInitializing = false;
-        
-        DontDestroyOnLoad(newGameObject);
+        //IsGameInitializing = false;
+    }
+
+    private void Awake()
+    {
+        if(Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public static void Victory(float time)

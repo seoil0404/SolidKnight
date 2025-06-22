@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ public class AudioManagerGenerator : MonoBehaviour
     [RuntimeInitializeOnLoadMethod]
     private static void Initialize()
     {
-        GameObject newObject = new GameObject(typeof(AudioManagerGenerator).Name);
-        newObject.AddComponent<AudioManagerGenerator>();
+        //GameObject newObject = new GameObject(typeof(AudioManagerGenerator).Name);
+        //newObject.AddComponent<AudioManagerGenerator>();
     }
 }

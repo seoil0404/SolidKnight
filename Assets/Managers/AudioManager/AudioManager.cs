@@ -10,12 +10,18 @@ public class AudioManager : MonoBehaviour
 
     private LinkedList<AudioSource> backGroundAudioSource = new();
     private List<AudioSource> effectAudioSources = new();
-    
-    private static AudioManager Instance { get; set; }
+
+    private static AudioManager Instance { get; set; } = null;
     public static bool IsAllocated => Instance != null;
 
     private void Awake()
     {
+        if(Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
@@ -45,8 +51,11 @@ public class AudioManager : MonoBehaviour
         return newSource;
     }
 
-    public static void Play(AudioClip audioClip, float volume = 1f) =>
+    public static void Play(AudioClip audioClip, float volume = 1f)
+    {
         Instance.PlayByInstance(audioClip, volume);
+    }
+        
 
     private void SetBackgroundMusicByInstance(AudioClip audioClip, float volume , float fadeTime)
     {
@@ -66,8 +75,11 @@ public class AudioManager : MonoBehaviour
         audioSource.DOFade(volume, fadeTime);
     }
 
-    public static void SetBackgroundMusic(AudioClip audioClip, float volume = 1f , float fadeTime = 0.5f) =>
+    public static void SetBackgroundMusic(AudioClip audioClip, float volume = 1f , float fadeTime = 0.5f)
+    {
         Instance.SetBackgroundMusicByInstance(audioClip, volume, fadeTime);
+    }
+        
 
 
     private void SetBackGroundVolumeByInstance(float volume, float time)
